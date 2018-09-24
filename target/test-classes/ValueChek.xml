@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+<listeners>
+<listener class-name="testListners.MethodInterceptorListner"/>
+<listener class-name="testListners.ExtentReportingListener"/>
+</listeners>
+  <test name="Test">
+  	<classes>
+  		<class name="testModules.LoginTests"/>
+  		<class name="testModules.HomeScreenTests"/>
+  		<class name="testModules.New_PropertyTests"/>
+  	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

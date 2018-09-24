@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testModules.New_PropertyTests">
+        <methods>
+          <include name="sellerPage"/>
+          <include name="defaultPhase"/>
+          <include name="fillingSeller"/>
+          <include name="tapPropertyOne"/>
+          <include name="redBell"/>
+          <include name="beforeClass"/>
+          <include name="editingSeller"/>
+          <include name="tileCheck"/>
+        </methods>
+      </class> <!-- testModules.New_PropertyTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
