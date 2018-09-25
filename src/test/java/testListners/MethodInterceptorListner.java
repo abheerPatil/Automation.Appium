@@ -18,7 +18,7 @@ public class MethodInterceptorListner implements IMethodInterceptor{
 	
 	public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
 		try {
-			FileInputStream ExcelFile = new FileInputStream("src/main/java/utility/VALUECHEK.xlsx");
+			FileInputStream ExcelFile = new FileInputStream("src/test/resources/VALUECHEK.xlsx");
 			@SuppressWarnings("resource")
 			XSSFWorkbook excelWBook = new XSSFWorkbook(ExcelFile);
 			XSSFSheet sheet = excelWBook.getSheet("Sheet1");

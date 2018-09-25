@@ -15,6 +15,7 @@ import pageObjects.LoginPage;
 import pageObjects.Property_Menu;
 import pageObjects.Property_Seller;
 import pageObjects.Property_TopBar;
+import testListners.SingleDataProvider;
 import testListners.SuiteDriverListner;
 import utility.ExtraFunctionalityCheck;
 
@@ -189,8 +190,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void charLimit(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void charLimit(String projectName, String notes){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -200,10 +201,10 @@ public class New_PropertyTests {
 			}
 			boolean res = true;
 			ob2.nameTextField.clear();
-			ob2.nameTextField.sendKeys("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
+			ob2.nameTextField.sendKeys(projectName);
 			driver.hideKeyboard();
 			String a = ob2.nameTextField.getAttribute("value");
-			if(a.equals("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST")){
+			if(a.equals(projectName)){
 				res = res && true;
 			}
 			else{
@@ -213,10 +214,9 @@ public class New_PropertyTests {
 			driver.hideKeyboard();
 			ob2.swipe("up");	
 			ob2.notesTextField.clear();
-			String b = "It  doesn’t  matter  what  type  of  ugly  home  you  have, HomeVestors  would  like  to  make  a  no  obligation  cash  offer  to purchase your home for cash. ";
-			ob2.notesTextField.sendKeys(b+"123");
+			ob2.notesTextField.sendKeys(notes+"123");
 			driver.hideKeyboard();
-			if(ob2.notesTextField.getAttribute("value").equals(b)){
+			if(ob2.notesTextField.getAttribute("value").equals(notes)){
 				res = res && true;
 			}
 			else{
@@ -235,8 +235,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void fillingSeller(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void fillingSeller(String projectName, String firstName, String lastName, String street, String city, String state, String zip, String phone, String mobile, String home, String work, String email, String notes){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -245,7 +245,7 @@ public class New_PropertyTests {
 				ob1.cards.get(0).click();
 			}
 			ob2.nameTextField.clear();
-			ob2.nameTextField.sendKeys("Project");
+			ob2.nameTextField.sendKeys(projectName);
 			ob2.appointmentField.click();
 			ob2.selectPicker(0, "next");
 			ob2.selectPicker(0, "next");
@@ -255,23 +255,23 @@ public class New_PropertyTests {
 			ob2.selectPicker(1, "next");
 			ob2.selectPicker(2, "previous");
 			ac.tap(PointOption.point(200, 100)).perform();
-			ob2.firstNameTextField.sendKeys("Alfred");
+			ob2.firstNameTextField.sendKeys(firstName);
 			driver.hideKeyboard();
-			ob2.lastNameTextField.sendKeys("Morrison");
+			ob2.lastNameTextField.sendKeys(lastName);
 			driver.hideKeyboard();
-			ob2.streetAddressTextField.sendKeys("1925 Pensione Pl");
+			ob2.streetAddressTextField.sendKeys(street);
 			driver.hideKeyboard();
-			ob2.cityTextField.sendKeys("Wenatchee");
+			ob2.cityTextField.sendKeys(city);
 			driver.hideKeyboard();
-			ob2.stateTextField.sendKeys("WA");
+			ob2.stateTextField.sendKeys(state);
 			driver.hideKeyboard();
-			ob2.zipCodeTextField.sendKeys("98801");
+			ob2.zipCodeTextField.sendKeys(zip);
 			driver.hideKeyboard();
-			ob2.mobilePhoneTextField.sendKeys("7183954794");
+			ob2.mobilePhoneTextField.sendKeys(mobile);
 			driver.hideKeyboard();
-			ob2.emailTextField.sendKeys("johncater@hva.com");
+			ob2.emailTextField.sendKeys(email);
 			driver.hideKeyboard();
-			ob2.notesTextField.sendKeys("Enjoy this home located in Western Heights.Close to schools and downtown.This 4 bedroom, 2 bath has great floor plan ready for your personal touch to decorate.");
+			ob2.notesTextField.sendKeys(notes);
 			driver.hideKeyboard();
 			ob3.clickSaveChangesBtn();
 			while(ob3.saveChangesBtn.getAttribute("visible").equals("false")){}
@@ -286,8 +286,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void wrongEmail(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void wrongEmail(String email){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -298,11 +298,10 @@ public class New_PropertyTests {
 			ob2.heading1.isDisplayed();
 			ob2.swipe("up");
 			ob2.emailTextField.clear();
-			ob2.emailTextField.sendKeys("ABCH");
+			ob2.emailTextField.sendKeys(email);
 			driver.hideKeyboard();
 			ob2.emailErrorMessage.isDisplayed();
 			ob2.emailTextField.clear();
-			ob2.emailTextField.sendKeys("johncarter@hva.com");
 			driver.hideKeyboard();
 			ob3.clickVCBtn();
 			Assert.assertEquals(true, true);
@@ -318,8 +317,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void wrongState(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void wrongState(String state){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -328,7 +327,7 @@ public class New_PropertyTests {
 				ob1.cards.get(0).click();
 			}
 			ob2.stateTextField.clear();
-			ob2.stateTextField.sendKeys("lo");
+			ob2.stateTextField.sendKeys(state);
 			driver.hideKeyboard();
 			driver.findElement(By.xpath("//XCUIElementTypeButton[@name = 'OK']")).click();
 			try{
@@ -355,8 +354,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void editingSeller(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void editingSeller(String projectName, String firstName, String lastName, String street, String city, String state, String zip, String phone, String mobile, String home, String work, String email, String notes){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -364,13 +363,13 @@ public class New_PropertyTests {
 			catch(Exception e){
 				ob1.cards.get(0).click();
 			}
-			ob2.nameTextField.sendKeys(" 1925 Pensione Pl");
+			ob2.nameTextField.sendKeys(projectName);
 			driver.hideKeyboard();
 			ob2.stateTextField.clear();
-			ob2.stateTextField.sendKeys("WA");
+			ob2.stateTextField.sendKeys(state);
 			driver.hideKeyboard();
 			ob2.emailTextField.clear();
-			ob2.emailTextField.sendKeys("alfred_morrison@hva.com");
+			ob2.emailTextField.sendKeys(email);
 			driver.hideKeyboard();
 			ob3.clickSaveChangesBtn();
 			while(ob3.saveChangesBtn.getAttribute("visible").equals("false")){}
@@ -387,8 +386,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void tileCheck(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void tileCheck(String a , String b){
 		try{
 			try{
 				ob1.homePageHeading.isDisplayed();
@@ -399,8 +398,8 @@ public class New_PropertyTests {
 			ob1.homePageHeading.isDisplayed();
 			MobileElement element = ob1.cards.get(0);
 			try{
-				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = 'Project 1925 Pensione Pl']"));
-				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = '1925 Pensione Pl Wenatchee, WA 98801']"));
+				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = '"+a+"']"));
+				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = '"+b+"']"));
 				element.findElement(By.xpath("//XCUIElementTypeStaticText[contains(@name , 'appt.')]")).getAttribute("name");
 				Assert.assertEquals(true, true);
 			}
@@ -414,8 +413,8 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test
-	public void redBell(){
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	public void redBell(String redbell, String amount){
 		try{
 			try{
 				ob2.heading1.isDisplayed();
@@ -424,12 +423,12 @@ public class New_PropertyTests {
 				ob1.cards.get(0).click();
 			}
 			ExtraFunctionalityCheck.waitForElement(ob2.heading1, driver, 10000);
-			ob2.redBellIDTextField.sendKeys("20596923-5");
+			ob2.redBellIDTextField.sendKeys(redbell);
 			driver.hideKeyboard();
 			ob2.importPropertyBtn.click();
 			driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeButton' AND name == 'OK'")).click();
 			ob4.comparablesCell.click();
-			if(ob4.comparablesAmount.getAttribute("value").equals("$102.70")){
+			if(ob4.comparablesAmount.getAttribute("value").equals(amount)){
 				ob3.clickVCBtn();
 				Assert.assertEquals(true, true);
 			}

@@ -16,6 +16,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.Property_Menu;
 import pageObjects.StatusBar;
+import testListners.SingleDataProvider;
 import testListners.SuiteDriverListner;
 import utility.ExtraFunctionalityCheck;
 
@@ -64,20 +65,21 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void stringVisiblity(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void stringVisiblity(String userField, String passField){
 	  try{
 		  boolean a, b;
 		  usernameField = ob1.usernameField;
 		  passwordField = ob1.passwordField;
 		  usernameField.clear();
-		  usernameField.sendKeys("kiwitech1");
+		  usernameField.sendKeys(userField);
 		  String user = usernameField.getAttribute("value");
 		  passwordField.clear();
-		  passwordField.sendKeys("hvavc1");
+		  passwordField.sendKeys(passField);
 		  String pass = passwordField.getAttribute("value");
-		  a = user.equals("kiwitech1")?true:false;
-		  b = pass.equals("hvavc1")?false:true;
+		  driver.hideKeyboard();
+		  a = user.equals(userField)?true:false;
+		  b = pass.equals(passField)?false:true;
 		  Assert.assertEquals(a && b, true);
 	  }
 	  catch(Exception e){
@@ -151,7 +153,6 @@ public class LoginTests {
 		  ob1.TermsAndCondLink.click();
 		  a = ob1.pageTexts.size() > 1 ? false:true;
 		  if (a == false){
-			  ExtraFunctionalityCheck.waitImplicit(10000);
 			  a = ob1.pageTexts.size() > 1 ? false:true; 
 		  }
 		  ob1.termsAndConditionCancel.click();
@@ -185,11 +186,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void noUsername(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void noUsername(String pass){
 	  try{
 		  boolean a;
-		  a = ob1.login("", "hvavc1");
+		  a = ob1.login("", pass);
 		  if(a == true){
 			 a = a && ob1.offlineMessage.isDisplayed();
 		  }
@@ -204,11 +205,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void noPassword(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void noPassword(String user){
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech1", "");
+		  a = ob1.login(user, "");
 		  if(a == true){
 			 a = a && ob1.offlineMessage.isDisplayed();
 		  }
@@ -223,11 +224,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void wrongUsername(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void wrongUsername(String user , String pass){
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech2", "hvavc1");
+		  a = ob1.login(user , pass);
 		  if(a == true){
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
@@ -242,11 +243,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void wrongPassword(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void wrongPassword(String user , String pass){
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech2", "hvavc1");
+		  a = ob1.login(user , pass);
 		  if(a == true){
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
@@ -261,11 +262,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void wrongUserAndPass(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void wrongUserAndPass(String user , String pass){
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech2", "hvavc1");
+		  a = ob1.login(user , pass);
 		  if(a == true){
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
@@ -280,11 +281,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void passwordInCaps() throws InterruptedException{
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void passwordInCaps(String user , String pass) throws InterruptedException{
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech2", "HVAVC2");
+		  a = ob1.login(user , pass);
 		  if(a == true){
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 			 Assert.assertEquals(a, true);
@@ -327,11 +328,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void positiveLogin(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void positiveLogin(String user, String pass){
 	  try{
 		  boolean a;
-		  a = ob1.login("kiwitech2", "hvavc2");
+		  a = ob1.login(user , pass);
 		  ExtraFunctionalityCheck.waitForElement(ob3.homePageHeading, driver, 10000);										
 		  if(a == true){
 			 a = a && ob3.homePageHeading.isDisplayed();
@@ -370,11 +371,11 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void logOutUsernameCheck(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void logOutUsernameCheck(String user){
 	  try{
-		  String user = ob1.usernameField.getAttribute("value");
-		  if(user.equals("kiwitech2")){
+		  String getUsername = ob1.usernameField.getAttribute("value");
+		  if(getUsername.equals(user)){
 			  Assert.assertEquals(true, true);
 		  }
 		  else{
@@ -387,14 +388,14 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void offlineLogin(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void offlineLogin(String user, String pass){
 	  try{
 		  boolean a;
 		  if(ob2.isOffline() == true){
 			  ExtraFunctionalityCheck.toggleWifi(driver);
 		  }
-		  a = ob1.login("kiwitech2", "hvavc2");
+		  a = ob1.login(user, pass);
 		  a = a && ob4.offlineMessage.getAttribute("visible").equals("true");
 		  ob3.menuButton.click();
 		  ob3.swipe("up");
@@ -411,14 +412,14 @@ public class LoginTests {
 	  }
   }
   
-  @Test
-  public void offlineLoginDiffUser(){
+  @Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+  public void offlineLoginDiffUser(String user, String pass){
 	  try{
 		  boolean a;
 		  if(ob2.isOffline() == true){
 			  ExtraFunctionalityCheck.toggleWifi(driver);
 		  }
-		  a = ob1.login("kiwitech3", "hvavc3");
+		  a = ob1.login(user, pass);
 		  a = a && ob1.offlineMessage.getAttribute("visible").equals("true");
 		  ExtraFunctionalityCheck.toggleWifi(driver);
 		  Assert.assertEquals(true, true);

@@ -35,7 +35,7 @@ public class ExtentReportingListener implements ITestListener{
 	 }
 	 public void onStart(ITestContext context) {
 		 
-	  reports = new ExtentReports("src/test/resources/"+new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date())+"report.html");
+	  reports = new ExtentReports("ExtentReport/"+new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date())+"report.html");
 	 }
 	 public void onFinish(ITestContext context) {
 	  reports.endTest(test);
