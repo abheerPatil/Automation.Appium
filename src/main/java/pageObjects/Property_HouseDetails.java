@@ -153,7 +153,7 @@ public class Property_HouseDetails {
 	@iOSXCUITFindBy(accessibility="Pricing Profile")
 	public IOSElement pricingProfileLabel; 
 	
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$type == 'XCUIElementTypeButton'$][7]")
+	@iOSXCUITFindBy(xpath="//XCUIElementTypeButton[preceding::XCUIElementTypeStaticText[@name = 'Pricing Profile']]")
 	public IOSElement pricingProfileDropDown;
 	
 	@iOSXCUITFindBy(accessibility="Safe Size")

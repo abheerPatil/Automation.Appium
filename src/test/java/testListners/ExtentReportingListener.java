@@ -44,6 +44,7 @@ public class ExtentReportingListener implements ITestListener{
 	 public void onTestFailure(ITestResult result) {
 	   test.log(LogStatus.FAIL, result.getMethod().getMethodName() , " TEST FAIL");
 	   test.log(LogStatus.FAIL,"DATA USED :-", convertToString(result.getParameters()));
+	   result.getMethod().getRetryAnalyzer();
 	 }
 	 public void onTestSkipped(ITestResult result) {
 	  test.log(LogStatus.SKIP, result.getMethod().getMethodName() ," TEST SKIPPED");
