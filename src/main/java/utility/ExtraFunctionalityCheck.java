@@ -96,7 +96,7 @@ public class ExtraFunctionalityCheck {
 		try{
 			long currentTime = System.currentTimeMillis();
 			long end = currentTime+time;
-			while(currentTime<end){
+			while(System.currentTimeMillis() < end){
 				try{
 					element.isDisplayed();
 					break;
@@ -115,7 +115,7 @@ public class ExtraFunctionalityCheck {
 			long currentTime = System.currentTimeMillis();
 			long end = currentTime+time;
 			while(a == true){
-				if(currentTime > end){
+				if(System.currentTimeMillis() > end){
 					a = false;
 					break;
 				}

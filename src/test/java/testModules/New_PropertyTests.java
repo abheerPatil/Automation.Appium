@@ -1,6 +1,5 @@
 package testModules;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -8,6 +7,7 @@ import org.testng.annotations.Test;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.ios.IOSTouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import pageObjects.HomePage;
@@ -190,7 +190,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void charLimit(String projectName, String notes){
 		try{
 			try{
@@ -200,29 +200,31 @@ public class New_PropertyTests {
 				ob1.cards.get(0).click();
 			}
 			boolean res = true;
-			ob2.nameTextField.clear();
-			ob2.nameTextField.sendKeys(projectName);
+			IOSElement nameField = ob2.nameTextField;
+			nameField.clear();
+			nameField.sendKeys(projectName);
 			driver.hideKeyboard();
-			String a = ob2.nameTextField.getAttribute("value");
-			if(a.equals(projectName)){
+			String a = nameField.getAttribute("value");
+			if(a.length()<=46){
 				res = res && true;
 			}
 			else{
 				res = false;
 			}
-			ob2.nameTextField.clear();
+			nameField.clear();
 			driver.hideKeyboard();
 			ob2.swipe("up");	
-			ob2.notesTextField.clear();
-			ob2.notesTextField.sendKeys(notes+"123");
+			IOSElement notesField = ob2.notesTextField;
+			notesField.clear();
+			notesField.sendKeys(notes+"123");
 			driver.hideKeyboard();
-			if(ob2.notesTextField.getAttribute("value").equals(notes)){
+			if(notesField.getAttribute("value").length()<=160){
 				res = res && true;
 			}
 			else{
 				res = false;
 			}
-			ob2.notesTextField.clear();
+			notesField.clear();
 			driver.hideKeyboard();
 			ob2.swipe("down");
 			Assert.assertEquals(res, true);
@@ -235,7 +237,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void fillingSeller(String projectName, String firstName, String lastName, String street, String city, String state, String zip, String phone, String mobile, String home, String work, String email, String notes){
 		try{
 			try{
@@ -286,7 +288,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void wrongEmail(String email){
 		try{
 			try{
@@ -317,7 +319,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void wrongState(String state){
 		try{
 			try{
@@ -329,7 +331,7 @@ public class New_PropertyTests {
 			ob2.stateTextField.clear();
 			ob2.stateTextField.sendKeys(state);
 			driver.hideKeyboard();
-			driver.findElement(By.xpath("//XCUIElementTypeButton[@name = 'OK']")).click();
+			driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeButton' AND name == 'OK'")).click();
 			try{
 				if(ob2.stateTextField.getAttribute("value")==null){
 					ob3.clickVCBtn();
@@ -354,7 +356,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void editingSeller(String projectName, String firstName, String lastName, String street, String city, String state, String zip, String phone, String mobile, String home, String work, String email, String notes){
 		try{
 			try{
@@ -398,9 +400,8 @@ public class New_PropertyTests {
 			ob1.homePageHeading.isDisplayed();
 			MobileElement element = ob1.cards.get(0);
 			try{
-				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = '"+a+"']"));
-				element.findElement(By.xpath("//XCUIElementTypeStaticText[@name = '"+b+"']"));
-				element.findElement(By.xpath("//XCUIElementTypeStaticText[contains(@name , 'appt.')]")).getAttribute("name");
+				element.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND name == '"+a+"'"));
+				element.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND name CONTAINS 'appt.'"));
 				Assert.assertEquals(true, true);
 			}
 			catch(Exception e){
@@ -413,7 +414,7 @@ public class New_PropertyTests {
 		}
 	}
 	
-	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
+	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class )
 	public void redBell(String redbell, String amount){
 		try{
 			try{
@@ -428,7 +429,7 @@ public class New_PropertyTests {
 			ob2.importPropertyBtn.click();
 			driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeButton' AND name == 'OK'")).click();
 			ob4.comparablesCell.click();
-			if(ob4.comparablesAmount.getAttribute("value").equals(amount)){
+			if(ob4.comparablesAmount.getAttribute("value").contains(amount)){
 				ob3.clickVCBtn();
 				Assert.assertEquals(true, true);
 			}

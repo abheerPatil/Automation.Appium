@@ -32,6 +32,7 @@ public class HomeScreenTests {
 	private static IOSElement menuButton;
 	private static IOSElement loanPhaseCell;
 	
+	
 	@BeforeMethod
 	public void beforeTest(Method method) throws InterruptedException{
 		try{
@@ -266,11 +267,14 @@ public class HomeScreenTests {
 		try{
 			menuButton.click();
 			try{
-				ob1.newBtn.isDisplayed();
-				ob1.activeBtn.isDisplayed();
-				ob1.pendingBtn.isDisplayed();
-				ob1.purchaseBtn.isDisplayed();
-				ob1.archiveBtn.isDisplayed();
+				if((ob1.newBtn.getAttribute("visible").equals("true"))&&(ob1.activeBtn.getAttribute("visible").equals("true"))&&(ob1.pendingBtn.getAttribute("visible").equals("true")))
+				{
+					ob1.purchaseBtn.isDisplayed();
+					ob1.archiveBtn.isDisplayed();
+				}
+				else{
+					throw new Exception("");
+				}
 			}
 			catch(Exception e){
 				ob1.propertyPhasesCell.click();
@@ -298,10 +302,14 @@ public class HomeScreenTests {
 			boolean a = true;
 			menuButton.click();
 			try{
-				ob1.activeBtn.isDisplayed();
+				if(ob1.activeBtn.getAttribute("visible").equals("true")){
 				a = a && ob1.checkPropertyPhaseSelectedItem(1);
 				a = a && ob1.checkPropertyPhaseSelectedItem(2);
 				a = a && ob1.checkPropertyPhaseSelectedItem(3);
+				}
+				else{
+					throw new Exception("");
+				}
 			}
 			catch(Exception e){
 				ob1.propertyPhasesCell.click();
@@ -326,12 +334,16 @@ public class HomeScreenTests {
 		try{
 			menuButton.click();
 			try{
-				ob1.activeBtn.isDisplayed();
-				ob1.newPropCount.isDisplayed();
-				ob1.activePropCount.isDisplayed();
-				ob1.pendingPropCount.isDisplayed();
-				ob1.purchasedPropCount.isDisplayed();
-				ob1.archivePropCount.isDisplayed();
+				if(ob1.activeBtn.getAttribute("visible").equals("true")){
+					ob1.newPropCount.isDisplayed();
+					ob1.activePropCount.isDisplayed();
+					ob1.pendingPropCount.isDisplayed();
+					ob1.purchasedPropCount.isDisplayed();
+					ob1.archivePropCount.isDisplayed();
+				}
+				else{
+					throw new Exception("");
+				}
 			}
 			catch(Exception e){
 				ob1.propertyPhasesCell.click();
@@ -358,6 +370,9 @@ public class HomeScreenTests {
 		try{
 			IOSTouchAction ac = new IOSTouchAction(driver);
 			menuButton.click();
+			if(ob1.activeBtn.getAttribute("visible").equals("false")){
+				ob1.propertyPhasesCell.click();
+			}
 			if(ob1.checkPropertyPhaseSelectedItem(1) == true){
 				ob1.newBtn.click();
 			}
@@ -439,6 +454,9 @@ public class HomeScreenTests {
 	public void loanPhases(){
 		try{
 			menuButton.click();
+			if(ob1.submittedBtn.getAttribute("visible").equals("false")){
+				ob1.loanPhasesCell.click();
+			}
 			if(ob1.checkHeaderOpened(1) == true){
 				ob1.propertyPhasesCell.click();
 			}
@@ -474,7 +492,9 @@ public class HomeScreenTests {
 				}
 				throw new Exception("");
 			}
-			catch(Exception e){
+			catch(Exception e){	}
+			if(ob1.submittedBtn.getAttribute("visible").equals("false")){
+				ob1.loanPhasesCell.click();
 			}
 			if(ob1.checkLoanPhaseSelectedItem(1) == true){
 				ob1.submittedBtn.click();
@@ -640,6 +660,8 @@ public class HomeScreenTests {
 	@Test
 	public void team(){
 		try{
+			driver.resetApp();
+			ExtraFunctionalityCheck.waitForElement(ob1.homePageHeading, driver, 5000);
 			menuButton.click();
 			if(ob1.checkHeaderOpened(1)== true){
 				ob1.propertyPhasesCell.click();
@@ -672,6 +694,7 @@ public class HomeScreenTests {
 	public void closeAndOpenCheck(){
 		try{
 			driver.resetApp();
+			ExtraFunctionalityCheck.waitForElement(ob1.homePageHeading, driver, 5000);
 			boolean a = true;
 			menuButton.click();
 			if (ob1.checkHeaderOpened(1)==false){

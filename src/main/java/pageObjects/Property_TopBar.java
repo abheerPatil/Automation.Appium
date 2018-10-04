@@ -2,6 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.support.PageFactory;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
@@ -35,11 +36,12 @@ public class Property_TopBar {
 	
 	
 /****************************************************************************ACTIONS***************************************************************************************/	
-	/*METHODS COUNT : 4
+	/*METHODS COUNT : 
 	 * 1. isSaveEnabled()
 	 * 2. clickCameraBtn()
 	 * 3. clickVCBtn()
 	 * 4. clickSaveChangesBtn()
+	 * 5.
 	 */
 /*****************************/
 	
@@ -102,4 +104,16 @@ public class Property_TopBar {
 			return false;
 		}
 	}
+	
+	public boolean checkProjectName(String name){
+		try{
+			driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND name == '"+name+"'"));
+			return true;
+		}
+		catch(Exception e){
+			System.err.println("Exception in class - Property_TopBar, in method - checkProjectName :"+e);		//LOG
+			return false;
+		}
+	}
+	
 }

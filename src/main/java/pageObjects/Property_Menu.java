@@ -1,12 +1,20 @@
 package pageObjects;
 
+import java.time.Duration;
+import java.util.HashMap;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
+import io.appium.java_client.ios.IOSTouchAction;
+import io.appium.java_client.ios.touch.IOSPressOptions;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import utility.ExtraFunctionalityCheck;
 import utility.ImageClass;
 
@@ -44,7 +52,7 @@ public class Property_Menu {
 	public IOSElement sellerCell;
 	
 	//SELLER TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Seller'")
 	public IOSElement sellerText;
 	
 	//HOUSE DETAILS CELL
@@ -52,7 +60,7 @@ public class Property_Menu {
 	public IOSElement houseDetailsCell;
 	
 	//HOUSE DETAILS TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'House Details'")
 	public IOSElement houseDetailsText;
 	
 	//COMPARABLES CELL
@@ -60,7 +68,7 @@ public class Property_Menu {
 	public IOSElement comparablesCell;
 	
 	//COMPARABLES TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[3]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Comparables'")
 	public IOSElement comparablesText;
 	
 	//COMPARABLE MAP CELL
@@ -68,7 +76,7 @@ public class Property_Menu {
 	public IOSElement comparablesMapCell;
 	
 	//COMPARABLE MAP TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[4]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Comparable Map'")
 	public IOSElement comparablesMapText;
 	
 	//NEIGHBORHOOD CLASS CELL
@@ -76,7 +84,7 @@ public class Property_Menu {
 	public IOSElement neighbourhoodClassCell;
 	
 	//NEIGHBORHOOD CLASS TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[5]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Neighborhood Class'")
 	public IOSElement neighbourhoodClassText;
 	
 	//REPAIRS CELL
@@ -84,7 +92,7 @@ public class Property_Menu {
 	public IOSElement repairsCell;
 	
 	//REPAIRS TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[6]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Repairs'")
 	public IOSElement repairsText;
 	
 	//PHOTOS CELL
@@ -92,7 +100,7 @@ public class Property_Menu {
 	public IOSElement photosCell;
 	
 	//PHOTOS TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[7]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Photos'")
 	public IOSElement photosText;
 	
 	//MESSAGES CELL
@@ -100,7 +108,7 @@ public class Property_Menu {
 	public IOSElement messagesCell;
 	
 	//MESSAGES TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[8]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Messages'")
 	public IOSElement messagesText;
 	
 	//PROPERTY ANALYSIS REPORT CELL
@@ -108,7 +116,7 @@ public class Property_Menu {
 	public IOSElement propertyAnalysisReportCell;
 	
 	//PROPERTY ANALYSIS REPORT TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[9]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Property Analysis Report'")
 	public IOSElement propertyAnalysisReportText;
 	
 	//LOAN CELL
@@ -116,7 +124,7 @@ public class Property_Menu {
 	public IOSElement loanCell;
 	
 	//LOAN TEXT
-	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/XCUIElementTypeCell[10]/XCUIElementTypeStaticText[1]")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name == 'Loan'")
 	public IOSElement loanText;
 	
 	//HOUSE DETAIL FILLED TICK
@@ -155,6 +163,9 @@ public class Property_Menu {
 	@iOSXCUITFindBy(accessibility="You are currently working offline. Your work will be saved after you connect to the internet.")
 	public IOSElement offlineMessage;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]")
+	public IOSElement leftNavMenu;
+	
 /****************************************************************************ACTIONS***************************************************************************************/	
 	/*METHODS COUNT : 4
 	 * 1. clickMenuItem(IOSElement element)
@@ -164,16 +175,32 @@ public class Property_Menu {
 	 */
 /************************************/
 	
+	public boolean swipe(String direction){
+		try{
+			JavascriptExecutor js = driver;
+		    HashMap<String, String> swipeObject = new HashMap<String, String>();
+		    swipeObject.put("direction", direction);
+		    swipeObject.put("element", leftNavMenu.getId());
+		    js.executeScript("mobile: swipe", swipeObject);
+			return true;
+		}
+		catch(Exception e){
+			System.err.println("Exception in class - Property_Menu, in method - swipe : "+e);
+			return false;
+		}
+	}
+	
+	
 	/*Method to click left bar menu item.
 	 * Parameters : IOSElement(element) 
 	 * Returns : true if operation completed and false if not.
 	 */
-	/*
+		
 	public boolean clickMenuItem(IOSElement element){
 		try{
 			if((element.equals(loanText))||(element.equals(loanCell))){
 				IOSTouchAction ob = new IOSTouchAction(driver);
-				ob.press(0,messagesCell.getLocation().getY()).waitAction(Duration.ofMillis(2)).moveTo(0, photosCell.getLocation().getY()).perform();
+				ob.press(IOSPressOptions.iosPressOptions().withPosition(PointOption.point(0,messagesCell.getLocation().getY()))).waitAction(WaitOptions.waitOptions(Duration.ofMillis(2))).moveTo(PointOption.point(0, photosCell.getLocation().getY())).perform();
 				element.click();
 				return true;
 			}
@@ -187,7 +214,7 @@ public class Property_Menu {
 			return false;
 		}
 	}
-	*/
+	
 	/*Method to check if property contains an image or not.
 	 * Parameters : null 
 	 * Returns : true if contains a photo and false if not.
@@ -289,89 +316,101 @@ public class Property_Menu {
 	 * Returns : true if selected and false if not.
 	 * NOTE: In this method a screenshot is compared with newly taken one, need to update if there is some sort of changes in UI.
 	 */
-	public boolean checkSelection(IOSElement element){
+	public boolean checkSelection(int selection){
 		try{
-			ExtraFunctionalityCheck.getScreenshots(element);
-			String path = "/Users/kiwitech/Desktop/screenshots/";
-			if((element.equals(sellerCell))||(element.equals(sellerText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/sellerSelected.png")==0){
+			String path = "src/main/resources/";
+			if(selection == 1){
+				ExtraFunctionalityCheck.getScreenshots(sellerText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/sellerSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/seller.png")==0){
+				else{
 					return false;
 				}
 			}
 			
-			else if((element.equals(houseDetailsCell))||(element.equals(houseDetailsText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/houseDetailsSelected.png")==0){
+			else if(selection == 2){
+				ExtraFunctionalityCheck.getScreenshots(houseDetailsText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/houseDetailsSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/houseDetails.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(comparablesCell))||(element.equals(comparablesText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/comparablesSelected.png")==0){
+			else if(selection == 3){
+				ExtraFunctionalityCheck.getScreenshots(comparablesText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/comparablesSelected.png")<=100){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/comparables.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(comparablesMapCell))||(element.equals(comparablesMapText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/comparablesMapSelected.png")==0){
+			else if(selection == 4){
+				ExtraFunctionalityCheck.getScreenshots(comparablesMapText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/comparablesMapSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/comparablesMap.png")==0){
+				else {
 					return false;
 				}
 			}
-			else if((element.equals(neighbourhoodClassCell))||(element.equals(neighbourhoodClassText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/neighbourhoodClass.png")==0){
-					return false;
-				}
-			}
-			else if((element.equals(repairsCell))||(element.equals(repairsText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/repairsSelected.png")==0){
+			else if(selection == 5){
+				ExtraFunctionalityCheck.getScreenshots(neighbourhoodClassText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/neighbourhoodClassSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/repairs.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(photosCell))||(element.equals(photosText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/photosSelected.png")==0){
+			else if(selection == 6){
+				ExtraFunctionalityCheck.getScreenshots(repairsText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/repairsSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/photos.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(messagesCell))||(element.equals(messagesText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/messagesSelected.png")==0){
+			else if(selection == 7){
+				ExtraFunctionalityCheck.getScreenshots(photosText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/photosSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/messages.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(propertyAnalysisReportCell))||(element.equals(propertyAnalysisReportText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/propertyAnalysisReportSelected.png")==0){
+			else if(selection == 8){
+				ExtraFunctionalityCheck.getScreenshots(messagesText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/messagesSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/propertyAnalysisReport.png")==0){
+				else{
 					return false;
 				}
 			}
-			else if((element.equals(loanCell))||(element.equals(loanText))){
-				if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/SELECTED/loanSelected.png")==0){
+			else if(selection == 9){
+				ExtraFunctionalityCheck.getScreenshots(propertyAnalysisReportText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/propertyAnalysisReportSelected.png")<=10){
 					return true;
 				}
-				else if(ImageClass.image(path+"screenshot.png", path+"PROPERTY MENU/UNSELECTED/loan.png")==0){
+				else{
 					return false;
 				}
 			}
-			throw new Exception("EXCEPTION - NO SCREENSHOT");
+			else if(selection == 10){
+				ExtraFunctionalityCheck.getScreenshots(loanText);
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/PROPERTY MENU/SELECTED/loanSelected.png")<=10){
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+			return false;
 		}
 		catch(Exception e){
 			System.err.println("Exception in class - Property_Menu, in method - checkSelection : "+e);

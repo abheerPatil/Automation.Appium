@@ -91,11 +91,16 @@ public class LoginTests {
   @Test
   public void forgotPasswordPage(){
 	  try{
-		  boolean a = true;
+		  boolean a = false;
 		  ob1.forgotPasswordLink.click();
 		  ExtraFunctionalityCheck.waitForElement(ob1.forgotPasswordPage, driver, 15000);
-		  a = a && ob1.forgotPasswordPage.isDisplayed();
-		  a = a && ob1.submitBtn.isDisplayed();
+		  long time = System.currentTimeMillis();
+		  long end = time + 5000;
+		  while(time < end){
+			  IOSElement element = ob1.forgotPasswordPage;
+			  a = element.isDisplayed();
+			  break;
+		  }
 		  Assert.assertEquals(a, true);
 	  }
 	  catch(Exception e){
@@ -230,6 +235,7 @@ public class LoginTests {
 		  boolean a;
 		  a = ob1.login(user , pass);
 		  if(a == true){
+			 ExtraFunctionalityCheck.waitForElement(ob1.incorrectCombinations, driver, 10000);
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
 		  else{
@@ -249,6 +255,7 @@ public class LoginTests {
 		  boolean a;
 		  a = ob1.login(user , pass);
 		  if(a == true){
+			 ExtraFunctionalityCheck.waitForElement(ob1.incorrectCombinations, driver, 10000); 
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
 		  else{
@@ -268,6 +275,7 @@ public class LoginTests {
 		  boolean a;
 		  a = ob1.login(user , pass);
 		  if(a == true){
+			 ExtraFunctionalityCheck.waitForElement(ob1.incorrectCombinations, driver, 10000); 
 			 a = a && ob1.incorrectCombinations.isDisplayed();
 		  }
 		  else{
@@ -287,7 +295,9 @@ public class LoginTests {
 		  boolean a;
 		  a = ob1.login(user , pass);
 		  if(a == true){
-			 a = a && ob1.incorrectCombinations.isDisplayed();
+			 ExtraFunctionalityCheck.waitForElement(ob1.incorrectCombinations, driver, 10000); 
+			 IOSElement incorrect = ob1.incorrectCombinations;
+			 a = a && incorrect.isDisplayed();
 			 Assert.assertEquals(a, true);
 		  }
 		  else{
@@ -333,7 +343,7 @@ public class LoginTests {
 	  try{
 		  boolean a;
 		  a = ob1.login(user , pass);
-		  ExtraFunctionalityCheck.waitForElement(ob3.homePageHeading, driver, 10000);										
+		  ExtraFunctionalityCheck.waitForElement(ob3.homePageHeading, driver, 20000);										
 		  if(a == true){
 			 a = a && ob3.homePageHeading.isDisplayed();
 		  }

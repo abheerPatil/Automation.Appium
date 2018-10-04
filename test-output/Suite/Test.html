@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>79/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 25 17:09:39 IST 2018</td>
+<td>Started on:</td><td>Wed Oct 03 20:11:47 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (926 ms)</td>
+<tr><td>Total time:</td><td>2537 seconds (2537619 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,621 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.HomeScreenTests.closeAndOpenCheck()'><b>closeAndOpenCheck</b><br>Test class: testModules.HomeScreenTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testModules.HomeScreenTests.closeAndOpenCheck(HomeScreenTests.java:730)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569164069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569164069'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at testModules.HomeScreenTests.closeAndOpenCheck(HomeScreenTests.java:730)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>67</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.LoginTests.dismissKeyboard()'><b>dismissKeyboard</b><br>Test class: testModules.LoginTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testModules.LoginTests.dismissKeyboard(LoginTests.java:333)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1697441364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1697441364'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at testModules.LoginTests.dismissKeyboard(LoginTests.java:333)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.menuBtnCheck()'><b>menuBtnCheck</b><br>Test class: testModules.HomeScreenTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testModules.HomeScreenTests.menuBtnCheck(HomeScreenTests.java:120)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace150079886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace150079886'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at testModules.HomeScreenTests.menuBtnCheck(HomeScreenTests.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.LoginTests.passwordInCaps()'><b>passwordInCaps</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2, HVAVC2</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testModules.LoginTests.passwordInCaps(LoginTests.java:313)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1968298538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1968298538'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at testModules.LoginTests.passwordInCaps(LoginTests.java:313)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>37</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.selectPricingProfile()'><b>selectPricingProfile</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: test</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testModules.Property_HouseDetailsTest.selectPricingProfile(Property_HouseDetailsTest.java:658)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1001702066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1001702066'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at testModules.Property_HouseDetailsTest.selectPricingProfile(Property_HouseDetailsTest.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.LoginTests.TermsAndCondLink()'><b>TermsAndCondLink</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.TermsAndCondOff()'><b>TermsAndCondOff</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>17</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.acDropDown()'><b>acDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 2</td>
+<td></td>
+<td>16</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.addFeature()'><b>addFeature</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>14</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.addOnDropDown()'><b>addOnDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 2</td>
+<td></td>
+<td>11</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.addOnField()'><b>addOnField</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 100</td>
+<td></td>
+<td>10</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.addingDataInAmenities()'><b>addingDataInAmenities</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1, 3, TRIAL 1, 200</td>
+<td></td>
+<td>44</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.addressUpdate()'><b>addressUpdate</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 97 Madison Ave, Island Park, NY, 11558</td>
+<td></td>
+<td>80</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.autoSelectedPhases()'><b>autoSelectedPhases</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>11</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.charLimit()'><b>charLimit</b><br>Test class: testModules.New_PropertyTests<br>Parameters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ, It  doesn’t  matter  what  type  of  ugly  home  you  have, HomeVestors  would  like  to  make  a  no  obligation  cash  offer  to purchase your home for cash. </td>
+<td></td>
+<td>69</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.checkHomeElements()'><b>checkHomeElements</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.LoginTests.checkLogin()'><b>checkLogin</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.checkZillowField()'><b>checkZillowField</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>14</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.clickableLogo()'><b>clickableLogo</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>32</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.dateAdded()'><b>dateAdded</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>16</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.defaultPhase()'><b>defaultPhase</b><br>Test class: testModules.New_PropertyTests</td>
+<td></td>
+<td>19</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.deleteAmenities()'><b>deleteAmenities</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1</td>
+<td></td>
+<td>33</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.editZillowFields()'><b>editZillowFields</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1936, 5, 3, 2</td>
+<td></td>
+<td>57</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.editingSeller()'><b>editingSeller</b><br>Test class: testModules.New_PropertyTests<br>Parameters:  1925 Pensione Pl, , , , , WA, , 9.836663366E9, , , , alfred_morrison@hva.com, </td>
+<td></td>
+<td>61</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.exteriorStyleDropDown()'><b>exteriorStyleDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 3</td>
+<td></td>
+<td>22</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.fillingSeller()'><b>fillingSeller</b><br>Test class: testModules.New_PropertyTests<br>Parameters: Project, Alfred, Morrison, 1925 Pensione Pl, Wenatchee, WA, 98801.0, , 7.183954794E9, , , johncater@hva.com, Enjoy this home located in Western Heights.Close to schools and downtown.This 4 bedroom, 2 bath has great floor plan ready for your personal touch to decorate.</td>
+<td></td>
+<td>125</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.filterOnLoan()'><b>filterOnLoan</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>39</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.filterOnProperty()'><b>filterOnProperty</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>120</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.folderState()'><b>folderState</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>45</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.LoginTests.forgotPasswordCancel()'><b>forgotPasswordCancel</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.forgotPasswordPage()'><b>forgotPasswordPage</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>16</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.garageConversionDropDown()'><b>garageConversionDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1</td>
+<td></td>
+<td>15</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.garageConversionField()'><b>garageConversionField</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 0</td>
+<td></td>
+<td>11</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.garageSizeDropDown()'><b>garageSizeDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1</td>
+<td></td>
+<td>14</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.homeStyleDropDown()'><b>homeStyleDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 4</td>
+<td></td>
+<td>15</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.hotTub()'><b>hotTub</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 4</td>
+<td></td>
+<td>16</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.houseDetailsBtn()'><b>houseDetailsBtn</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>8</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.houseDetailsCell()'><b>houseDetailsCell</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>3</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.houseDetailsCheckmark()'><b>houseDetailsCheckmark</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>8</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.houseDetailsSelection()'><b>houseDetailsSelection</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>1</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.houseDimensions()'><b>houseDimensions</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 100, 100</td>
+<td></td>
+<td>19</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.loanPhases()'><b>loanPhases</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>23</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.logOut()'><b>logOut</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>15</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.LoginTests.logOutUsernameCheck()'><b>logOutUsernameCheck</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2</td>
+<td></td>
+<td>1</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.loginElementsDisplay()'><b>loginElementsDisplay</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>4</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.menuCloseOutside()'><b>menuCloseOutside</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.navDrawerFolders()'><b>navDrawerFolders</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>44</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.navDrawerScroll()'><b>navDrawerScroll</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>34</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.newPropertyBtn()'><b>newPropertyBtn</b><br>Test class: testModules.New_PropertyTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.newPropertyCheck()'><b>newPropertyCheck</b><br>Test class: testModules.New_PropertyTests</td>
+<td></td>
+<td>11</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.LoginTests.noPassword()'><b>noPassword</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2</td>
+<td></td>
+<td>7</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.noUserAndPass()'><b>noUserAndPass</b><br>Test class: testModules.LoginTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.noUsername()'><b>noUsername</b><br>Test class: testModules.LoginTests<br>Parameters: hvavc2</td>
+<td></td>
+<td>5</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.notesHouseDetails()'><b>notesHouseDetails</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: A pangram, or holoalphabetic sentence, is a sentence that contains every letter of the alphabet at least once. The most famous pangram is probably the thirty-five-letter-long “The quick brown fox jumps over the lazy dog,” which has been used to test typing equipment since at least the late 1800s.</td>
+<td></td>
+<td>17</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.offlineBrandingCheck()'><b>offlineBrandingCheck</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>25</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.LoginTests.offlineLogin()'><b>offlineLogin</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2, hvavc2</td>
+<td></td>
+<td>36</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.offlineLoginDiffUser()'><b>offlineLoginDiffUser</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech3, hvavc3</td>
+<td></td>
+<td>30</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.oneFilterOnly()'><b>oneFilterOnly</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>31</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.poolDropDown()'><b>poolDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 2</td>
+<td></td>
+<td>16</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.LoginTests.positiveLogin()'><b>positiveLogin</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2, hvavc2</td>
+<td></td>
+<td>21</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.projectNameOnTop()'><b>projectNameOnTop</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: Project 1925 Pensione Pl</td>
+<td></td>
+<td>0</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.propertiesInView()'><b>propertiesInView</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>58</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.propertyPhases()'><b>propertyPhases</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>13</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.propertyPhasesNumber()'><b>propertyPhasesNumber</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>13</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.redBell()'><b>redBell</b><br>Test class: testModules.New_PropertyTests<br>Parameters: 20596923-5, $102.70</td>
+<td></td>
+<td>44</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.safeSize()'><b>safeSize</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.safeSizeInfo()'><b>safeSizeInfo</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.screenSections()'><b>screenSections</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>13</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.sellerPage()'><b>sellerPage</b><br>Test class: testModules.New_PropertyTests</td>
+<td></td>
+<td>39</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.settingsHeader()'><b>settingsHeader</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>31</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.storageBuildingDropDown()'><b>storageBuildingDropDown</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 1</td>
+<td></td>
+<td>17</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.storageBuildingField()'><b>storageBuildingField</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: 0</td>
+<td></td>
+<td>10</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.LoginTests.stringVisiblity()'><b>stringVisiblity</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech1, password</td>
+<td></td>
+<td>8</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.tapGarageCheckBox()'><b>tapGarageCheckBox</b><br>Test class: testModules.Property_HouseDetailsTest<br>Parameters: yes</td>
+<td></td>
+<td>3</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.tapPropertyOne()'><b>tapPropertyOne</b><br>Test class: testModules.New_PropertyTests</td>
+<td></td>
+<td>12</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.HomeScreenTests.team()'><b>team</b><br>Test class: testModules.HomeScreenTests</td>
+<td></td>
+<td>39</td>
+<td>testModules.HomeScreenTests@239105a8</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.tileCheck()'><b>tileCheck</b><br>Test class: testModules.New_PropertyTests<br>Parameters: Project 1925 Pensione Pl, 1925 Pensione Pl Wenatchee, WA 98801</td>
+<td></td>
+<td>13</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.wrongEmail()'><b>wrongEmail</b><br>Test class: testModules.New_PropertyTests<br>Parameters: sasfdsgsgs</td>
+<td></td>
+<td>50</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.LoginTests.wrongPassword()'><b>wrongPassword</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech2, hvavc</td>
+<td></td>
+<td>10</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.New_PropertyTests.wrongState()'><b>wrongState</b><br>Test class: testModules.New_PropertyTests<br>Parameters: lo</td>
+<td></td>
+<td>43</td>
+<td>testModules.New_PropertyTests@3fce8fd9</td></tr>
+<tr>
+<td title='testModules.LoginTests.wrongUserAndPass()'><b>wrongUserAndPass</b><br>Test class: testModules.LoginTests<br>Parameters: @##$%%^^^, ##$%^^&&&</td>
+<td></td>
+<td>11</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.LoginTests.wrongUsername()'><b>wrongUsername</b><br>Test class: testModules.LoginTests<br>Parameters: kiwitech22, hvavc2</td>
+<td></td>
+<td>9</td>
+<td>testModules.LoginTests@72ade7e3</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.zillowLogo()'><b>zillowLogo</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>11</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+<tr>
+<td title='testModules.Property_HouseDetailsTest.zillowText()'><b>zillowText</b><br>Test class: testModules.Property_HouseDetailsTest</td>
+<td></td>
+<td>1</td>
+<td>testModules.Property_HouseDetailsTest@609bcfb6</td></tr>
+</table><p>
 </body>
 </html>

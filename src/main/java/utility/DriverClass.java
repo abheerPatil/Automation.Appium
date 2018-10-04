@@ -20,11 +20,11 @@ public class DriverClass {
       caps.setCapability("platformVersion", "11.3");
       caps.setCapability("deviceName","Admin’s iPad");
       caps.setCapability("udid", "4e9d674970ddf0f3245628d4172d98924445783f");
-      caps.setCapability("noReset", "true");
+      caps.setCapability("noReset", true);
       caps.setCapability("bundleId","com.homevestors.valuechek2");
       caps.setCapability("xcodeOrgId", "Q3HXH3MWZ2");
       caps.setCapability("xcodeSigningId", "iPhone Developer");
-      //caps.setCapability("newCommandTimeout", 60*30);
+      caps.setCapability("newCommandTimeout", 60);
       caps.setCapability("autoDismissAlerts", true);
       try {
 		driver = new IOSDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testModules.Property_HouseDetailsTest">
+        <methods>
+          <include name="houseDetailsBtn"/>
+          <include name="houseDetailsCell"/>
+          <include name="houseDetailsCheckmark"/>
+          <include name="beforeClass"/>
+          <include name="checkZillowField"/>
+          <include name="addressUpdate"/>
+          <include name="screenSections"/>
+          <include name="houseDetailsSelection"/>
+          <include name="projectNameOnTop"/>
+          <include name="zillowLogo"/>
+          <include name="clickableLink"/>
+          <include name="offlineBrandingCheck"/>
+          <include name="editZillowFields"/>
+          <include name="zillowText"/>
+        </methods>
+      </class> <!-- testModules.Property_HouseDetailsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

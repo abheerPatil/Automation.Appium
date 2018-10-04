@@ -118,6 +118,9 @@ public class HomePage {
 	public IOSElement approvedPropCount;
 	
 	//DATE ADDED
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeButton' AND name == 'DATE ADDED'")
+	public IOSElement dateAddedBtn;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable/**/XCUIElementTypeOther[4]")
 	public IOSElement dateAddedCell;
 	

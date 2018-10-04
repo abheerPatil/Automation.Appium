@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="testListners.MethodInterceptorListner"/>
+    <listener class-name="testListners.ExtentReportingListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testModules.LoginTests">
+        <methods>
+          <include name="dismissKeyboard"/>
+          <include name="beforeTest"/>
+          <include name="passwordInCaps" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testModules.LoginTests -->
+      <class name="testModules.HomeScreenTests">
+        <methods>
+          <include name="closeAndOpenCheck"/>
+          <include name="menuBtnCheck"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testModules.HomeScreenTests -->
+      <class name="testModules.Property_HouseDetailsTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="selectPricingProfile" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testModules.Property_HouseDetailsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
