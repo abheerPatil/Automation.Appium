@@ -10,14 +10,28 @@
     <classes>
       <class name="testModules.LoginTests">
         <methods>
-          <include name="wrongPassword" invocation-numbers="0"/>
           <include name="dismissKeyboard"/>
           <include name="beforeTest"/>
-          <include name="passwordInCaps" invocation-numbers="0 0 0"/>
-          <include name="positiveLogin" invocation-numbers="0"/>
+          <include name="passwordInCaps" invocation-numbers="0 0"/>
+          <include name="TermsAndCondOff"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- testModules.LoginTests -->
+      <class name="testModules.HomeScreenTests">
+        <methods>
+          <include name="menuBtnCheck"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testModules.HomeScreenTests -->
+      <class name="testModules.Property_HouseDetailsTest">
+        <methods>
+          <include name="houseDetailsBtn"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="addingDataInAmenities" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testModules.Property_HouseDetailsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

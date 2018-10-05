@@ -34,17 +34,28 @@ public class Property_HouseDetailsTest {
 	
 	@BeforeClass
 	public void beforeClass(){
-		driver.resetApp();
-		ExtraFunctionalityCheck.waitForElement(ob1.homePageHeading, driver, 10000);
-		ob1.cards.get(0).click();
+		try{
+			driver.resetApp();
+			ExtraFunctionalityCheck.waitForElement(ob1.homePageHeading, driver, 10000);
+			ob1.cards.get(0).click();
+		}
+		catch(Exception e){
+			
+		}
 	}
 	
 	@BeforeMethod
 	public void beforeTest(Method m){
-		if(!(m.getName().equals("projectNameOnTop") || m.getName().equals("houseDetailsBtn"))){
-			ExtraFunctionalityCheck.waitForElement(ob4.houseDetailsText, driver, 10000);
-			ob4.houseDetailsText.click();
-			ExtraFunctionalityCheck.waitImplicit(6000);
+		try{
+			if(!(m.getName().equals("projectNameOnTop") || m.getName().equals("houseDetailsBtn"))){
+				ExtraFunctionalityCheck.waitForElement(ob4.houseDetailsText, driver, 10000);
+				ob4.houseDetailsText.click();
+				ExtraFunctionalityCheck.waitImplicit(6000);
+			}
+		
+		}
+		catch(Exception e){
+			
 		}
 	}
 	

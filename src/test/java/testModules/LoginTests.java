@@ -156,13 +156,13 @@ public class LoginTests {
 			  ExtraFunctionalityCheck.toggleWifi(driver);
 		  }
 		  ob1.TermsAndCondLink.click();
-		  a = ob1.pageTexts.size() > 1 ? false:true;
+		  a = ob1.pageTexts.size() > 19000 ? true:false;
 		  if (a == false){
-			  a = ob1.pageTexts.size() > 1 ? false:true; 
+			  a = ob1.pageTexts.size() > 19000 ? true:false; 
 		  }
 		  ob1.termsAndConditionCancel.click();
-		  Assert.assertEquals(a, true);
 		  ExtraFunctionalityCheck.toggleWifi(driver);
+		  Assert.assertEquals(a, true);
 	  }
 	  catch(Exception e){
 		  ob1.termsAndConditionCancel.click();
