@@ -193,13 +193,13 @@ public class demoShowcase {
 		try{
 			ob5.comparablesText.click();
 			boolean a = true;
-			a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable1CheckBox);
-			a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable2CheckBox);
+		//	a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable1CheckBox);
+			//a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable2CheckBox);
 //4			ob6.swipeTillComparable(4);
-			a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable3CheckBox);
+		//	a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable3CheckBox);
 			ob6.comparable3CheckBox.click();
 			ob6.comparable4checkBox.click();
-			a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable4checkBox);
+			//a = a && ob6.verifyCheckBoxIsSeleceted(ob6.comparable4checkBox);
 			if((a == true) && (ob5.comparablesAmount.equals("$109.69"))){
 				return true;
 			}

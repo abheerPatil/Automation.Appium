@@ -17,6 +17,19 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- testModules.LoginTests -->
+      <class name="testModules.Comparables_Redbell">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="comparablesCount"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testModules.Comparables_Redbell -->
+      <class name="testModules.New_PropertyTests">
+        <methods>
+          <include name="redBell" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testModules.New_PropertyTests -->
       <class name="testModules.HomeScreenTests">
         <methods>
           <include name="menuBtnCheck"/>
@@ -26,8 +39,8 @@
       </class> <!-- testModules.HomeScreenTests -->
       <class name="testModules.Property_HouseDetailsTest">
         <methods>
-          <include name="houseDetailsBtn"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
           <include name="beforeTest"/>
           <include name="addingDataInAmenities" invocation-numbers="0"/>
         </methods>

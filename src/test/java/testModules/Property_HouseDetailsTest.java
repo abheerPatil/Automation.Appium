@@ -3,6 +3,7 @@ package testModules;
 import java.lang.reflect.Method;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -59,6 +60,15 @@ public class Property_HouseDetailsTest {
 		}
 	}
 	
+	@AfterClass
+	public void afterClass(){
+		try{
+			ob3.vcBtn.click();
+		}
+		catch(Exception e){
+			System.out.println("Exception in after class method"+e);
+		}
+	}
 
 	@Test(dataProvider="data" , dataProviderClass = SingleDataProvider.class)
 	public void projectNameOnTop(String name){
@@ -215,11 +225,12 @@ public class Property_HouseDetailsTest {
 			IOSTouchAction ac = new IOSTouchAction(driver);
 			ob2.heading1.isDisplayed();
 			ob2.swipe("up");
+			ob2.swipe("up");
 			ob2.zillowLogo.click();
 			ExtraFunctionalityCheck.waitImplicit(10000);
 			String urlCheck = ob2.url.getAttribute("value");
 			ac.longPress(PointOption.point(0, 755)).moveTo(PointOption.point(0, 200)).release().perform();
-			driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeOther' AND name CONTAINS 'valuechek'")).click();
+			driver.findElement(MobileBy.iOSNsPredicateString("name CONTAINS 'valuechek'")).click();
 			ExtraFunctionalityCheck.waitForElement(ob2.heading3, driver, 10000);
 			ob2.swipe("down");
 			if(urlCheck.contains("Zillow")){

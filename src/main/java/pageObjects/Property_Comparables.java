@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -44,11 +45,17 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(accessibility="Comparable 1")
 	public IOSElement comparable1; 
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 1'$]")
+	public IOSElement comparable1Cell;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 1'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable1CheckBox;
 	
 	@iOSXCUITFindBy(accessibility="Comparable 2")
 	public IOSElement comparable2;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 2'$]")
+	public IOSElement comparable2Cell;
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 2'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable2CheckBox;
@@ -56,11 +63,17 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(accessibility="Comparable 3")
 	public IOSElement comparable3;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 3'$]")
+	public IOSElement comparable3Cell;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 3'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable3CheckBox;
 	
 	@iOSXCUITFindBy(accessibility="Comparable 4")
 	public IOSElement comparable4;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 4'$]")
+	public IOSElement comparable4Cell;
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 4'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable4checkBox;
@@ -68,11 +81,17 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(accessibility="Comparable 5")
 	public IOSElement comparable5;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 5'$]")
+	public IOSElement comparable5Cell;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 5'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable5CheckBox;
 	
 	@iOSXCUITFindBy(accessibility="Comparable 6")
 	public IOSElement comparable6;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 6'$]")
+	public IOSElement comparable6Cell;
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 6'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable6CheckBox;
@@ -80,11 +99,17 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(accessibility="Comparable 7")
 	public IOSElement comparable7;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 7'$]")
+	public IOSElement comparable7Cell;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 7'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable7CheckBox;
 	
 	@iOSXCUITFindBy(accessibility="Comparable 8")
 	public IOSElement comparable8;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 8'$]")
+	public IOSElement comparable8Cell;
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 8'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable8CheckBox;
@@ -92,11 +117,17 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(accessibility="Comparable 9")
 	public IOSElement comparable9;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 9'$]")
+	public IOSElement comparable9Cell;
+	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 9'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable9CheckBox;
 	
 	@iOSXCUITFindBy(accessibility="Comparable 10")
 	public IOSElement comparable10;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 10'$]")
+	public IOSElement comparable10Cell;
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Comparable 10'$]/**/XCUIElementTypeButton")
 	public IOSElement comparable10CheckBox;
@@ -112,6 +143,51 @@ public class Property_Comparables {
 	
 	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCollectionView[1]/**/XCUIElementTypeImage")
 	public IOSElement subjectPropertyImage;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Street Address City, State, Zip'$]")
+	public IOSElement cell1;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Distance'$]")
+	public IOSElement cell2;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Main'$]")
+	public IOSElement cell3;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Year Built'$]")
+	public IOSElement cell4;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Sold For'$]")
+	public IOSElement cell5;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Sale Date'$]")
+	public IOSElement cell6;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Days on Market'$]")
+	public IOSElement cell7;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Cost Per Sq Ft'$]")
+	public IOSElement cell8;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Bedrooms'$]")
+	public IOSElement cell9;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Bathrooms'$]")
+	public IOSElement cell10;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Garage Size'$]")
+	public IOSElement cell11;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'AC'$]")
+	public IOSElement cell12;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Garage Conversion'$]")
+	public IOSElement cell13;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Exterior Style'$]")
+	public IOSElement cell14;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name = 'Notes'$]")
+	public IOSElement cell15;
 	
 	@iOSXCUITFindBy(accessibility="Street Address City, State, Zip")
 	public IOSElement streetAddressLabel;
@@ -236,17 +312,21 @@ public class Property_Comparables {
 	@iOSXCUITFindBy(xpath="//XCUIElementTypeTextField[preceding::XCUIElementTypeStaticText[@name='Comparable Reports']]")
 	public IOSElement linkTextField;
 	
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeButton' AND name == 'View Red Bell Report'")
+	public IOSElement pdfDocument;
 	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeCell[$name == 'Count Twice'$]")
+	public List<IOSElement> countTwiceRows;
 	
 /****************************************************************************ACTIONS***************************************************************************************/	
-	/*ACTIONS COUNT: 12
+	/*ACTIONS COUNT:
 	 * 1.  swipeTillComparable(Integer i)
 	 * 2.  selectingComparableRow(IOSElement element , Integer index)
 	 * 3.  swipeTop()
 	 * 4.  selectItem(IOSElement element, Integer index)
-	 * 5.  selectPicker(Integer column, String direction)
+	 *   selectPicker(Integer column, String direction)
 	 * 6.  verifyFields(IOSElement element, String comparable)
-	 * 7.  verifyCheckBoxIsSeleceted(IOSElement element)
+	 *   verifyCheckBoxIsSeleceted(IOSElement element)
 	 * 8.  getField(IOSElement cell)
 	 * 9.  getBox(IOSElement cell)
 	 * 10. getStaticField(IOSElement cell)
@@ -334,6 +414,167 @@ public class Property_Comparables {
 		return null;
 	}
 	
+	public String findSubjectPropertyData(int row){
+		try{
+			String result;
+			int x , y;
+			switch(row){
+			
+			case 1: x = streetAddressLabel.getLocation().getX();
+					y = streetAddressLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+				return result;
+				
+			case 2: x = distanceLabel.getLocation().getX();
+					y = distanceLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+				
+			case 3: x = mainLabel.getLocation().getX();
+					y = mainLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+		
+			case 4: x = yearBuiltLabel.getLocation().getX();
+					y = yearBuiltLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+			
+			case 5: x = soldForLabel.getLocation().getX();
+					y = soldForLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+
+			case 6: x = saleDateLabel.getLocation().getX();
+					y = saleDateLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+				
+			case 7: x = daysOnMarketLabel.getLocation().getX();
+					y = daysOnMarketLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+
+			case 8: x = costPerSqFtLabel.getLocation().getX();
+					y = costPerSqFtLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+					
+			case 9: x = bedroomsLabel.getLocation().getX();
+					y = bedroomsLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+
+			case 10:x = bathroomsLabel.getLocation().getX();
+					y = bathroomsLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+					
+			case 11:x = garageSizeLabel.getLocation().getX();
+					y = garageSizeLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+
+			case 12:x = acLabel.getLocation().getX();
+					y = acLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+					
+			case 13:x = garageConverisonLabel.getLocation().getX();
+					y = garageConverisonLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;
+
+			case 14:x = exteriorStyleLabel.getLocation().getX();
+					y = exteriorStyleLabel.getLocation().getY();
+					result = driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND rect.y == "+y+" AND rect.x > "+x+"")).getAttribute("name");
+					return result;		
+				
+			default: return null;
+			}
+		}
+		catch(Exception e){
+			System.err.println("Exception in class - Property_Comparables, in method - selectingComparableRow : "+e);
+			return null;
+		}
+	}
+	
+	//FOR FIRST ROW FIND THE BUTTON OR STATIC TEXT AS PER USAGE
+	public IOSElement getComparableRow(int row , int xComparable){
+		try{
+			int x = xComparable;
+			IOSElement result;
+			int y;
+			switch(row){
+			
+			case 1: y = cell1.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+""));
+					return result;
+				
+			case 2: y = cell2.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+				
+			case 3: y = cell3.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+		
+			case 4: y = cell4.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+			
+			case 5: y = cell5.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+
+			case 6: y = cell6.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeButton"));
+					return result;
+				
+			case 7: y = cell7.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+
+			case 8: y = cell8.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+					
+			case 9: y = cell9.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+
+			case 10:y = cell10.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+					
+			case 11:y = cell11.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeButton"));
+					return result;
+
+			case 12:y = cell12.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeButton"));
+					return result;
+					
+			case 13:y = cell13.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextField"));
+					return result;
+
+			case 14:y = cell14.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeButton"));
+					return result;		
+			
+			case 15:y = cell15.getLocation().getY();
+					result = (IOSElement)driver.findElement(MobileBy.iOSNsPredicateString("type == 'XCUIElementTypeCell' AND rect.y == "+y+" AND rect.x == "+x+"")).findElement(MobileBy.className("XCUIElementTypeTextView"));
+					return result;
+					
+			default: return null;
+			}
+		}	
+		catch(Exception e){
+			System.err.println("Exception in class - Property_Comparables, in method - getComparableRow : "+e);
+			return null;
+		}
+	}
 	/*Method to swipe to the top.
 	 * Parameters :null 
 	 * Returns : null
@@ -539,14 +780,11 @@ public class Property_Comparables {
 		 * Parameters :IOSElement (element) 
 		 * Returns : true if selected, false if not.
 		 */
-	 public boolean verifyCheckBoxIsSeleceted(IOSElement element){
-			String path = "/Users/kiwitech/Desktop/screenshots/";
+	 public boolean isComparableSelected(IOSElement element){
+			String path = "src/main/resources/";
 			ExtraFunctionalityCheck.getScreenshots(element);
 			try{
-				if(ImageClass.image(path+"screenshot.png", path+"COMPARABLES/comparableSelect.png")==0){
-					return true;
-				}
-				else if(ImageClass.image(path+"screenshot.png", path+"COMPARABLES/countTwiceSelected.png")==0){
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/COMPARABLES/comparableSelect.png")<=10){
 					return true;
 				}
 				else{
@@ -554,10 +792,28 @@ public class Property_Comparables {
 				}
 			}
 			catch(Exception e){
-				System.err.println("Exception in class - Property_Comparables, in method - verifyCheckBoxIsSelected : "+e);
+				System.err.println("Exception in class - Property_Comparables, in method - isComparableSelected : "+e);
 				return false;
 			}
 		}
+	 
+	 public boolean isCountTwiceSelected(IOSElement element){
+			String path = "src/main/resources/";
+			ExtraFunctionalityCheck.getScreenshots(element);
+			try{
+				if(ImageClass.image(path+"screenshot.png", path+"screenshots/COMPARABLES/countTwiceSelected.png")<=10){
+					return true;
+				}
+				else{
+					return false;
+				}
+			}
+			catch(Exception e){
+				System.err.println("Exception in class - Property_Comparables, in method - isCountTwiceSelected : "+e);
+				return false;
+			}
+		}
+	 
 	 
 	 /*Method to get text field from cell.
 		 * Parameters :IOSElement (cell) 

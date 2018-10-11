@@ -12,6 +12,7 @@
   		<class name="testModules.HomeScreenTests"/>
   		<class name="testModules.New_PropertyTests"/>
   		<class name="testModules.Property_HouseDetailsTest"/>
+  		<class name="testModules.Comparables_Redbell"/>
   	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -158,8 +158,12 @@ public class HomeScreenTests {
 	public void navDrawerScroll(){
 		try{
 			menuButton.click();
-			ob1.swipeTillFound(ob1.logOutBtn, "up");
-			ob1.swipeTillFound(ob1.newBtn, "down");
+			ob1.swipe("up");
+			ob1.swipe("up");
+			ob1.swipe("up");
+			ob1.swipe("down");
+			ob1.swipe("down");
+			ob1.swipe("down");
 			IOSTouchAction ac = new IOSTouchAction(driver);
 			ac.tap(PointOption.point(261, 261)).perform();
 			try{
