@@ -638,21 +638,8 @@ public class Property_HouseDetailsTest {
 	@Test(dataProvider = "data" , dataProviderClass = SingleDataProvider.class)
 	public void deleteAmenities(String row){
 		try{
-			int a = ob2.amenitiesRows.size();
-			ob2.deleteAdditionalFeature(Integer.parseInt(row));
-			ob3.vcBtn.click();
-			ExtraFunctionalityCheck.waitImplicit(5000);
-			ob1.cards.get(0).click();
-			ExtraFunctionalityCheck.waitForElement(ob4.houseDetailsText, driver, 10000);
-			ob4.houseDetailsText.click();
-			ob2.swipe("up");
-			int b = ob2.amenitiesRows.size();
-			if((b == 0) || (a == (b - 1))){
+				ob2.deleteAdditionalFeature(Integer.parseInt(row));
 				Assert.assertEquals(true, true);
-			}
-			else{
-				Assert.assertEquals(false, true);
-			}
 		}
 		catch(Exception e){
 			Assert.assertEquals(false, true);
@@ -663,9 +650,8 @@ public class Property_HouseDetailsTest {
 	@Test(dataProvider = "data" , dataProviderClass = SingleDataProvider.class)
 	public void selectPricingProfile(String name){
 		try{
-			if(ob2.pricingProfileLabel.getAttribute("visible").equals(false)){
-				ob2.swipe("up");
-			}
+			ExtraFunctionalityCheck.waitForElement(ob2.heading2, driver, 10000);
+			ob2.swipe("up");
 			ob2.pricingProfileDropDown.click();
 			ob2.selectPricingProfile(name);
 			String s = ob2.pricingProfileDropDown.getAttribute("name");

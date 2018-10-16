@@ -19,106 +19,147 @@ public class Property_RepairsMenu {
 /****************************************************************************CONSTRUCTOR************************************************************************************/	
 		
 	public Property_RepairsMenu(IOSDriver<MobileElement> driver){
-		//System.out.println("Started");
 		this.driver = driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
 /****************************************************************************ELEMENTS***************************************************************************************/	
-	//ELEMENTS COUNT: 32
+	//ELEMENTS COUNT: 
 /**************************/	
 	
-	@iOSXCUITFindBy(accessibility="Property Details")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeButton[$name == '< Property Details'$]")
 	public IOSElement propertyDetails;
 		
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Roofing']")
-	public IOSElement roofing;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Roofing'")
+	public IOSElement roofingText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Roofing']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Roofing'$]")
+	public IOSElement roofingCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Roofing'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement roofingCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Doors & Windows']")
-	public IOSElement doorAndWindows;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Doors & Windows'")
+	public IOSElement doorAndWindowstext;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Doors & Windows']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Doors & Windows'$]")
+	public IOSElement doorAndWindowsCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Doors & Windows'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement doorAndWindowsCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Exterior Paint & Siding']")
-	public IOSElement exteriorPaintAndSiding;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Exterior Paint & Siding'")
+	public IOSElement exteriorPaintAndSidingText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Exterior Paint & Siding']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Exterior Paint & Siding'$]")
+	public IOSElement exteriorPaintAndSidingCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Exterior Paint & Siding'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement exteriorPaintAndSidingCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Foundation']")
-	public IOSElement foundation;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Foundation'")
+	public IOSElement foundationText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Foundation']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Foundation'$]")
+	public IOSElement foundationCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Foundation'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement foundationCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='E/FO']")
-	public IOSElement eFO;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='E/FO'")
+	public IOSElement eFOText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'E/FO']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'E/FO'$]")
+	public IOSElement eFOCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'E/FO'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement eFOCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Kitchen']")
-	public IOSElement kitchen;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Kitchen'")
+	public IOSElement kitchenText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Kitchen']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Kitchen'$]")
+	public IOSElement kitchenCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Kitchen'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement kitchenCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Bathroom']")
-	public IOSElement bathroom;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Bathroom'")
+	public IOSElement bathroomText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Bathroom']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Bathroom'$]")
+	public IOSElement bathroomCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Bathroom'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement bathroomCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Interior Paint']")
-	public IOSElement interiorPaint;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Interior Paint'")
+	public IOSElement interiorPaintText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Interior Paint']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Interior Paint'$]")
+	public IOSElement interiorPaintCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Interior Paint'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement interiorPaintCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Flooring']")
-	public IOSElement flooring;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Flooring'")
+	public IOSElement flooringText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Flooring']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Flooring'$]")
+	public IOSElement flooringCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Flooring'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement flooringCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Plumbing']")
-	public IOSElement plumbing;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Plumbing'")
+	public IOSElement plumbingText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Plumbing']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Plumbing'$]")
+	public IOSElement plumbingCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Plumbing'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement plumbingCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='HVAC']")
-	public IOSElement hVAC;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='HVAC'")
+	public IOSElement hVACText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'HVAC']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'HVAC'$]")
+	public IOSElement hVACCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'HVAC'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement hVACCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Electrical']")
-	public IOSElement electrical;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Electrical'")
+	public IOSElement electricalText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Electrical']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Electrical'$]")
+	public IOSElement electricalCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Electrical'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement electricalCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Fixtures']")
-	public IOSElement fixtures;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Fixtures'")
+	public IOSElement fixturesText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Fixtures']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Fixtures'$]")
+	public IOSElement fixturesCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Fixtures'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement fixturesCost;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[@name='Miscellaneous']")
-	public IOSElement miscellaneous;
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Miscellaneous'")
+	public IOSElement miscellaneousText;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Miscellaneous']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Miscellaneous'$]")
+	public IOSElement miscellaneousCell;
+	
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Miscellaneous'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement miscellaneousCost;
 	
-	@iOSXCUITFindBy(accessibility="Total Repairs")
+	@iOSXCUITFindBy(iOSNsPredicate="type == 'XCUIElementTypeStaticText' AND name =='Total Repairs'")
 	public IOSElement totalRepairs;
 	
-	@iOSXCUITFindBy(xpath="//XCUIElementTypeStaticText[preceding::XCUIElementTypeStaticText[@name = 'Total Repairs']]")
+	@iOSXCUITFindBy(iOSClassChain="**/XCUIElementTypeTable[1]/**/XCUIElementTypeCell[$name == 'Total Repairs'$]/XCUIElementTypeStaticText[2]")
 	public IOSElement totalCost;
 	
 	@iOSXCUITFindBy(className="XCUIElementTypeTable")
@@ -175,47 +216,47 @@ public class Property_RepairsMenu {
 	public boolean isSelected(IOSElement element){
 		try{
 			ExtraFunctionalityCheck.getScreenshots(element);
-			String path = "/Users/kiwitech/Desktop/screenshots/";
-			if((element.equals(roofing))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/roofing.png")==0)){
+			String path = "/src/main/resources/";
+			if((element.equals(roofingText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/roofing.png")==0)){
 				return true;
 			}
-			else if((element.equals(doorAndWindows))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/doorAndWindows.png")==0)){
+			else if((element.equals(doorAndWindowstext))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/doorAndWindows.png")==0)){
 				return true;
 			}
-			else if((element.equals(exteriorPaintAndSiding))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/exteriorPaintAndSiding.png")==0)){
+			else if((element.equals(exteriorPaintAndSidingText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/exteriorPaintAndSiding.png")==0)){
 				return true;
 			}
-			else if((element.equals(foundation))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/foundation.png")==0)){
+			else if((element.equals(foundationText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/foundation.png")==0)){
 				return true;
 			}
-			else if((element.equals(eFO))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/eFO.png")==0)){
+			else if((element.equals(eFOText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/eFO.png")==0)){
 				return true;
 			}
-			else if((element.equals(kitchen))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/kitchen.png")==0)){
+			else if((element.equals(kitchenText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/kitchen.png")==0)){
 				return true;
 			}
-			else if((element.equals(bathroom))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/bathroom.png")==0)){
+			else if((element.equals(bathroomText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/bathroom.png")==0)){
 				return true;
 			}
-			else if((element.equals(interiorPaint))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/interiorPaint.png")==0)){
+			else if((element.equals(interiorPaintText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/interiorPaint.png")==0)){
 				return true;
 			}
-			else if((element.equals(flooring))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/flooring.png")==0)){
+			else if((element.equals(flooringText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/flooring.png")==0)){
 				return true;
 			}
-			else if((element.equals(plumbing))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/plumbing.png")==0)){
+			else if((element.equals(plumbingText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/plumbing.png")==0)){
 				return true;
 			}
-			else if((element.equals(hVAC))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/hVAC.png")==0)){
+			else if((element.equals(hVACText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/hVAC.png")==0)){
 				return true;
 			}
-			else if((element.equals(electrical))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/electrical.png")==0)){
+			else if((element.equals(electricalText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/electrical.png")==0)){
 				return true;
 			}
-			else if((element.equals(fixtures))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/fixtures.png")==0)){
+			else if((element.equals(fixturesText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/fixtures.png")==0)){
 				return true;
 			}
-			else if((element.equals(miscellaneous))&&(ImageClass.image(path+"screenshot.png", path+"REPAIRS MENU/miscellaneous.png")==0)){
+			else if((element.equals(miscellaneousText))&&(ImageClass.image(path+"screenshot.png", path+"screenshots/REPAIRS MENU/miscellaneous.png")==0)){
 				return true;
 			}
 			else{

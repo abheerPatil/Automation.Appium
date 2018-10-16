@@ -1,6 +1,7 @@
 package testModules;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,10 +17,11 @@ import pageObjects.Property_Comparables;
 import pageObjects.Property_HouseDetails;
 import pageObjects.Property_Menu;
 import pageObjects.Property_Seller;
+import pageObjects.Property_TopBar;
 import testListners.SuiteDriverListner;
 import utility.ExtraFunctionalityCheck;
 
-public class Comparables_Redbell {
+public class Property_Comparables_Redbell {
 	
 	public IOSDriver<MobileElement> driver = SuiteDriverListner.driver;
 	HomePage ob1 = new HomePage(driver);
@@ -28,6 +30,7 @@ public class Comparables_Redbell {
 	Property_Comparables ob4 = new Property_Comparables(driver);
 	Property_HouseDetails ob5 = new Property_HouseDetails(driver);
 	IOSTouchAction ob6 = new IOSTouchAction(driver);
+	Property_TopBar ob7 = new Property_TopBar(driver);
 	
 	@BeforeClass
 	public void beforeClass(){
@@ -52,6 +55,16 @@ public class Comparables_Redbell {
 		}
 	}
 	
+	@AfterClass
+	public void afterClass(){
+		try{
+			ob7.vcBtn.click();
+			ExtraFunctionalityCheck.waitForElement(ob1.homePageHeading, driver, 10000);
+		}
+		catch(Exception e){
+			System.out.print("Exception in after class method "+e);
+		}
+	}
 	
 	
 	@Test
