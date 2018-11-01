@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="3" ignored="0" total="22" passed="16">
+<testng-results skipped="6" failed="5" ignored="0" total="106" passed="95">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="478512" started-at="2018-10-17T11:07:54Z" finished-at="2018-10-17T11:15:53Z">
+  <suite name="Suite" duration-ms="3314138" started-at="2018-10-29T05:55:59Z" finished-at="2018-10-29T06:51:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="478512" started-at="2018-10-17T11:07:54Z" finished-at="2018-10-17T11:15:53Z">
+    <test name="Test" duration-ms="3314138" started-at="2018-10-29T05:55:59Z" finished-at="2018-10-29T06:51:13Z">
       <class name="testModules.LoginTests">
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5179" started-at="2018-10-17T11:07:57Z" finished-at="2018-10-17T11:08:02Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="7430" started-at="2018-10-29T05:56:02Z" finished-at="2018-10-29T05:56:09Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginElementsDisplay()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="loginElementsDisplay" duration-ms="4819" started-at="2018-10-17T11:08:02Z" finished-at="2018-10-17T11:08:07Z">
+        <test-method status="PASS" signature="loginElementsDisplay()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="loginElementsDisplay" duration-ms="5157" started-at="2018-10-29T05:56:09Z" finished-at="2018-10-29T05:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginElementsDisplay -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5664" started-at="2018-10-17T11:08:09Z" finished-at="2018-10-17T11:08:14Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5499" started-at="2018-10-29T05:56:15Z" finished-at="2018-10-29T05:56:21Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="stringVisiblity(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="stringVisiblity" duration-ms="8291" started-at="2018-10-17T11:08:14Z" data-provider="data" finished-at="2018-10-17T11:08:23Z">
+        <test-method status="PASS" signature="stringVisiblity(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="stringVisiblity" duration-ms="9955" started-at="2018-10-29T05:56:21Z" data-provider="data" finished-at="2018-10-29T05:56:31Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stringVisiblity -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5602" started-at="2018-10-17T11:08:23Z" finished-at="2018-10-17T11:08:28Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5724" started-at="2018-10-29T05:56:31Z" finished-at="2018-10-29T05:56:36Z">
           <params>
             <param index="0">
               <value>
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="forgotPasswordPage()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="forgotPasswordPage" duration-ms="15751" started-at="2018-10-17T11:08:28Z" finished-at="2018-10-17T11:08:44Z">
+        <test-method status="PASS" signature="forgotPasswordPage()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="forgotPasswordPage" duration-ms="16778" started-at="2018-10-29T05:56:36Z" finished-at="2018-10-29T05:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPasswordPage -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="7137" started-at="2018-10-17T11:08:44Z" finished-at="2018-10-17T11:08:51Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="7589" started-at="2018-10-29T05:56:53Z" finished-at="2018-10-29T05:57:01Z">
           <params>
             <param index="0">
               <value>
@@ -75,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="forgotPasswordCancel()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="forgotPasswordCancel" duration-ms="1324" started-at="2018-10-17T11:08:51Z" finished-at="2018-10-17T11:08:52Z">
+        <test-method status="PASS" signature="forgotPasswordCancel()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="forgotPasswordCancel" duration-ms="1525" started-at="2018-10-29T05:57:01Z" finished-at="2018-10-29T05:57:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPasswordCancel -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5768" started-at="2018-10-17T11:08:52Z" finished-at="2018-10-17T11:08:58Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5468" started-at="2018-10-29T05:57:02Z" finished-at="2018-10-29T05:57:08Z">
           <params>
             <param index="0">
               <value>
@@ -90,11 +90,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TermsAndCondLink()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="TermsAndCondLink" duration-ms="8889" started-at="2018-10-17T11:08:58Z" finished-at="2018-10-17T11:09:07Z">
+        <test-method status="PASS" signature="TermsAndCondLink()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="TermsAndCondLink" duration-ms="7375" started-at="2018-10-29T05:57:08Z" finished-at="2018-10-29T05:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsAndCondLink -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="6140" started-at="2018-10-17T11:09:07Z" finished-at="2018-10-17T11:09:13Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5197" started-at="2018-10-29T05:57:15Z" finished-at="2018-10-29T05:57:20Z">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="TermsAndCondOff()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="TermsAndCondOff" duration-ms="16772" started-at="2018-10-17T11:09:13Z" finished-at="2018-10-17T11:09:30Z">
+        <test-method status="SKIP" signature="TermsAndCondOff()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="TermsAndCondOff" duration-ms="19358" started-at="2018-10-29T05:57:20Z" finished-at="2018-10-29T05:57:40Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -150,7 +150,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsAndCondOff -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5678" started-at="2018-10-17T11:09:30Z" finished-at="2018-10-17T11:09:36Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5713" started-at="2018-10-29T05:57:40Z" finished-at="2018-10-29T05:57:45Z">
           <params>
             <param index="0">
               <value>
@@ -161,7 +161,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="TermsAndCondOff()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="TermsAndCondOff" duration-ms="16794" started-at="2018-10-17T11:09:36Z" finished-at="2018-10-17T11:09:52Z">
+        <test-method status="FAIL" signature="TermsAndCondOff()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="TermsAndCondOff" duration-ms="19616" started-at="2018-10-29T05:57:45Z" finished-at="2018-10-29T05:58:05Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -206,7 +206,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsAndCondOff -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5503" started-at="2018-10-17T11:09:52Z" finished-at="2018-10-17T11:09:58Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5949" started-at="2018-10-29T05:58:05Z" finished-at="2018-10-29T05:58:11Z">
           <params>
             <param index="0">
               <value>
@@ -217,11 +217,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="noUserAndPass()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="noUserAndPass" duration-ms="7896" started-at="2018-10-17T11:09:58Z" finished-at="2018-10-17T11:10:06Z">
+        <test-method status="PASS" signature="noUserAndPass()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="noUserAndPass" duration-ms="9715" started-at="2018-10-29T05:58:11Z" finished-at="2018-10-29T05:58:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noUserAndPass -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5467" started-at="2018-10-17T11:10:07Z" finished-at="2018-10-17T11:10:12Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5068" started-at="2018-10-29T05:58:22Z" finished-at="2018-10-29T05:58:27Z">
           <params>
             <param index="0">
               <value>
@@ -232,7 +232,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="noUsername(java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="noUsername" duration-ms="5918" started-at="2018-10-17T11:10:12Z" data-provider="data" finished-at="2018-10-17T11:10:18Z">
+        <test-method status="PASS" signature="noUsername(java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="noUsername" duration-ms="7216" started-at="2018-10-29T05:58:27Z" data-provider="data" finished-at="2018-10-29T05:58:34Z">
           <params>
             <param index="0">
               <value>
@@ -243,7 +243,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noUsername -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="7147" started-at="2018-10-17T11:10:20Z" finished-at="2018-10-17T11:10:27Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5748" started-at="2018-10-29T05:58:36Z" finished-at="2018-10-29T05:58:41Z">
           <params>
             <param index="0">
               <value>
@@ -254,7 +254,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="noPassword(java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="noPassword" duration-ms="7540" started-at="2018-10-17T11:10:27Z" data-provider="data" finished-at="2018-10-17T11:10:34Z">
+        <test-method status="PASS" signature="noPassword(java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="noPassword" duration-ms="8363" started-at="2018-10-29T05:58:41Z" data-provider="data" finished-at="2018-10-29T05:58:50Z">
           <params>
             <param index="0">
               <value>
@@ -265,7 +265,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noPassword -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="6723" started-at="2018-10-17T11:10:35Z" finished-at="2018-10-17T11:10:42Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5755" started-at="2018-10-29T05:58:50Z" finished-at="2018-10-29T05:58:56Z">
           <params>
             <param index="0">
               <value>
@@ -276,7 +276,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="wrongUsername(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="wrongUsername" duration-ms="9719" started-at="2018-10-17T11:10:42Z" data-provider="data" finished-at="2018-10-17T11:10:51Z">
+        <test-method status="PASS" signature="wrongUsername(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="wrongUsername" duration-ms="11787" started-at="2018-10-29T05:58:56Z" data-provider="data" finished-at="2018-10-29T05:59:08Z">
           <params>
             <param index="0">
               <value>
@@ -292,7 +292,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUsername -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5733" started-at="2018-10-17T11:10:52Z" finished-at="2018-10-17T11:10:57Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5313" started-at="2018-10-29T05:59:08Z" finished-at="2018-10-29T05:59:14Z">
           <params>
             <param index="0">
               <value>
@@ -303,7 +303,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="wrongPassword(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="wrongPassword" duration-ms="15796" started-at="2018-10-17T11:10:57Z" data-provider="data" finished-at="2018-10-17T11:11:13Z">
+        <test-method status="PASS" signature="wrongPassword(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="wrongPassword" duration-ms="11604" started-at="2018-10-29T05:59:14Z" data-provider="data" finished-at="2018-10-29T05:59:25Z">
           <params>
             <param index="0">
               <value>
@@ -319,7 +319,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongPassword -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="6462" started-at="2018-10-17T11:11:14Z" finished-at="2018-10-17T11:11:20Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="8825" started-at="2018-10-29T05:59:26Z" finished-at="2018-10-29T05:59:35Z">
           <params>
             <param index="0">
               <value>
@@ -330,7 +330,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="wrongUserAndPass(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="wrongUserAndPass" duration-ms="12872" started-at="2018-10-17T11:11:20Z" data-provider="data" finished-at="2018-10-17T11:11:33Z">
+        <test-method status="PASS" signature="wrongUserAndPass(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="wrongUserAndPass" duration-ms="10732" started-at="2018-10-29T05:59:35Z" data-provider="data" finished-at="2018-10-29T05:59:45Z">
           <params>
             <param index="0">
               <value>
@@ -346,7 +346,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongUserAndPass -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="6840" started-at="2018-10-17T11:11:34Z" finished-at="2018-10-17T11:11:41Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="6764" started-at="2018-10-29T05:59:46Z" finished-at="2018-10-29T05:59:53Z">
           <params>
             <param index="0">
               <value>
@@ -357,7 +357,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="passwordInCaps(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="passwordInCaps" duration-ms="37772" started-at="2018-10-17T11:11:41Z" data-provider="data" finished-at="2018-10-17T11:12:18Z">
+        <test-method status="SKIP" signature="passwordInCaps(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="passwordInCaps" duration-ms="52297" started-at="2018-10-29T05:59:53Z" data-provider="data" finished-at="2018-10-29T06:00:45Z">
           <params>
             <param index="0">
               <value>
@@ -370,19 +370,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeButton[1]})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:568)
-at org.testng.Assert.assertEquals(Assert.java:578)
-at testModules.LoginTests.passwordInCaps(LoginTests.java:313)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeButton[1]})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(<generated>)
+at testModules.LoginTests.passwordInCaps(LoginTests.java:309)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -408,13 +405,39 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@65fd6708 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosClassChain: **/XCUIElementTypeButton[1]})
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'KiwiTechs-Mac-mini-5.local', ip: 'fe80:0:0:0:1c1f:67c3:f7d5:5109%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.3', java.version: '1.8.0_162'
+Driver info: driver.version: IOSDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordInCaps -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5491" started-at="2018-10-17T11:12:19Z" finished-at="2018-10-17T11:12:24Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="7523" started-at="2018-10-29T06:00:47Z" finished-at="2018-10-29T06:00:55Z">
           <params>
             <param index="0">
               <value>
@@ -425,7 +448,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="passwordInCaps(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="passwordInCaps" duration-ms="42182" started-at="2018-10-17T11:12:24Z" data-provider="data" finished-at="2018-10-17T11:13:07Z">
+        <test-method status="FAIL" signature="passwordInCaps(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="passwordInCaps" duration-ms="59946" started-at="2018-10-29T06:00:55Z" data-provider="data" finished-at="2018-10-29T06:01:55Z">
           <params>
             <param index="0">
               <value>
@@ -482,7 +505,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordInCaps -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5365" started-at="2018-10-17T11:13:07Z" finished-at="2018-10-17T11:13:12Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5452" started-at="2018-10-29T06:01:55Z" finished-at="2018-10-29T06:02:00Z">
           <params>
             <param index="0">
               <value>
@@ -493,7 +516,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="dismissKeyboard()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="dismissKeyboard" duration-ms="2579" started-at="2018-10-17T11:13:12Z" finished-at="2018-10-17T11:13:14Z">
+        <test-method status="SKIP" signature="dismissKeyboard()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="dismissKeyboard" duration-ms="3113" started-at="2018-10-29T06:02:00Z" finished-at="2018-10-29T06:02:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -538,7 +561,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dismissKeyboard -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5647" started-at="2018-10-17T11:13:14Z" finished-at="2018-10-17T11:13:20Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5824" started-at="2018-10-29T06:02:04Z" finished-at="2018-10-29T06:02:09Z">
           <params>
             <param index="0">
               <value>
@@ -549,7 +572,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="dismissKeyboard()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="dismissKeyboard" duration-ms="2292" started-at="2018-10-17T11:13:20Z" finished-at="2018-10-17T11:13:22Z">
+        <test-method status="FAIL" signature="dismissKeyboard()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="dismissKeyboard" duration-ms="4982" started-at="2018-10-29T06:02:09Z" finished-at="2018-10-29T06:02:14Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -594,7 +617,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dismissKeyboard -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5234" started-at="2018-10-17T11:13:23Z" finished-at="2018-10-17T11:13:28Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="7795" started-at="2018-10-29T06:02:16Z" finished-at="2018-10-29T06:02:23Z">
           <params>
             <param index="0">
               <value>
@@ -605,7 +628,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="positiveLogin(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="positiveLogin" duration-ms="21845" started-at="2018-10-17T11:13:28Z" data-provider="data" finished-at="2018-10-17T11:13:50Z">
+        <test-method status="PASS" signature="positiveLogin(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="positiveLogin" duration-ms="53226" started-at="2018-10-29T06:02:23Z" data-provider="data" finished-at="2018-10-29T06:03:17Z">
           <params>
             <param index="0">
               <value>
@@ -621,7 +644,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positiveLogin -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-17T11:13:50Z" finished-at="2018-10-17T11:13:50Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-10-29T06:03:17Z" finished-at="2018-10-29T06:03:17Z">
           <params>
             <param index="0">
               <value>
@@ -632,11 +655,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="checkLogin()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="checkLogin" duration-ms="9737" started-at="2018-10-17T11:13:50Z" finished-at="2018-10-17T11:14:00Z">
+        <test-method status="PASS" signature="checkLogin()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="checkLogin" duration-ms="10202" started-at="2018-10-29T06:03:17Z" finished-at="2018-10-29T06:03:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogin -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="11594" started-at="2018-10-17T11:14:00Z" finished-at="2018-10-17T11:14:12Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="20333" started-at="2018-10-29T06:03:27Z" finished-at="2018-10-29T06:03:48Z">
           <params>
             <param index="0">
               <value>
@@ -647,7 +670,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="logOutUsernameCheck(java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="logOutUsernameCheck" duration-ms="1040" started-at="2018-10-17T11:14:12Z" data-provider="data" finished-at="2018-10-17T11:14:13Z">
+        <test-method status="PASS" signature="logOutUsernameCheck(java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="logOutUsernameCheck" duration-ms="2592" started-at="2018-10-29T06:03:48Z" data-provider="data" finished-at="2018-10-29T06:03:50Z">
           <params>
             <param index="0">
               <value>
@@ -658,7 +681,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutUsernameCheck -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5691" started-at="2018-10-17T11:14:14Z" finished-at="2018-10-17T11:14:20Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="7449" started-at="2018-10-29T06:03:51Z" finished-at="2018-10-29T06:03:58Z">
           <params>
             <param index="0">
               <value>
@@ -669,7 +692,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="offlineLogin(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="offlineLogin" duration-ms="36759" started-at="2018-10-17T11:14:20Z" data-provider="data" finished-at="2018-10-17T11:14:57Z">
+        <test-method status="PASS" signature="offlineLogin(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="offlineLogin" duration-ms="44693" started-at="2018-10-29T06:03:58Z" data-provider="data" finished-at="2018-10-29T06:04:43Z">
           <params>
             <param index="0">
               <value>
@@ -685,7 +708,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- offlineLogin -->
-        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="beforeTest" is-config="true" duration-ms="5181" started-at="2018-10-17T11:14:57Z" finished-at="2018-10-17T11:15:02Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="beforeTest" is-config="true" duration-ms="5303" started-at="2018-10-29T06:04:44Z" finished-at="2018-10-29T06:04:49Z">
           <params>
             <param index="0">
               <value>
@@ -696,7 +719,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="offlineLoginDiffUser(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="offlineLoginDiffUser" duration-ms="22911" started-at="2018-10-17T11:15:02Z" data-provider="data" finished-at="2018-10-17T11:15:25Z">
+        <test-method status="PASS" signature="offlineLoginDiffUser(java.lang.String, java.lang.String)[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="offlineLoginDiffUser" duration-ms="24190" started-at="2018-10-29T06:04:49Z" data-provider="data" finished-at="2018-10-29T06:05:14Z">
           <params>
             <param index="0">
               <value>
@@ -712,11 +735,1638 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- offlineLoginDiffUser -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testModules.LoginTests@30b6ffe0]" name="afterClass" is-config="true" duration-ms="27620" started-at="2018-10-17T11:15:25Z" finished-at="2018-10-17T11:15:53Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testModules.LoginTests@51a9ad5e]" name="afterClass" is-config="true" duration-ms="23770" started-at="2018-10-29T06:05:14Z" finished-at="2018-10-29T06:05:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testModules.LoginTests -->
+      <class name="testModules.Property_Comparables_Redbell">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeClass" is-config="true" duration-ms="14358" started-at="2018-10-29T06:39:56Z" finished-at="2018-10-29T06:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5469" started-at="2018-10-29T06:40:10Z" finished-at="2018-10-29T06:40:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="comparablesCount()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="comparablesCount" duration-ms="6092" started-at="2018-10-29T06:40:15Z" finished-at="2018-10-29T06:40:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at testModules.Property_Comparables_Redbell.comparablesCount(Property_Comparables_Redbell.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparablesCount -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="4093" started-at="2018-10-29T06:40:22Z" finished-at="2018-10-29T06:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="comparablesCount()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="comparablesCount" duration-ms="64536" started-at="2018-10-29T06:40:26Z" finished-at="2018-10-29T06:41:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparablesCount -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5116" started-at="2018-10-29T06:41:30Z" finished-at="2018-10-29T06:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectedComparables()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="selectedComparables" duration-ms="22044" started-at="2018-10-29T06:41:35Z" finished-at="2018-10-29T06:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectedComparables -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="6116" started-at="2018-10-29T06:41:57Z" finished-at="2018-10-29T06:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="atMostFour()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="atMostFour" duration-ms="86807" started-at="2018-10-29T06:42:03Z" finished-at="2018-10-29T06:43:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atMostFour -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5374" started-at="2018-10-29T06:43:30Z" finished-at="2018-10-29T06:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="costPerSqFt()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="costPerSqFt" duration-ms="38286" started-at="2018-10-29T06:43:36Z" finished-at="2018-10-29T06:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- costPerSqFt -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5278" started-at="2018-10-29T06:44:14Z" finished-at="2018-10-29T06:44:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="editFields()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="editFields" duration-ms="62835" started-at="2018-10-29T06:44:19Z" finished-at="2018-10-29T06:45:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editFields -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5279" started-at="2018-10-29T06:45:22Z" finished-at="2018-10-29T06:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="scrolling()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="scrolling" duration-ms="39776" started-at="2018-10-29T06:45:27Z" finished-at="2018-10-29T06:46:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrolling -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5243" started-at="2018-10-29T06:46:07Z" finished-at="2018-10-29T06:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="comparablesObjects()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="comparablesObjects" duration-ms="38222" started-at="2018-10-29T06:46:12Z" finished-at="2018-10-29T06:46:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparablesObjects -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5358" started-at="2018-10-29T06:46:51Z" finished-at="2018-10-29T06:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="subjectProp()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="subjectProp" duration-ms="25848" started-at="2018-10-29T06:46:56Z" finished-at="2018-10-29T06:47:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subjectProp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5795" started-at="2018-10-29T06:47:22Z" finished-at="2018-10-29T06:47:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="noCountTwice()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="noCountTwice" duration-ms="7516" started-at="2018-10-29T06:47:28Z" finished-at="2018-10-29T06:47:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noCountTwice -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5610" started-at="2018-10-29T06:47:35Z" finished-at="2018-10-29T06:47:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="notPopulated()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="notPopulated" duration-ms="24332" started-at="2018-10-29T06:47:41Z" finished-at="2018-10-29T06:48:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notPopulated -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5657" started-at="2018-10-29T06:48:05Z" finished-at="2018-10-29T06:48:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="acMenu()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="acMenu" duration-ms="23079" started-at="2018-10-29T06:48:11Z" finished-at="2018-10-29T06:48:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acMenu -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5369" started-at="2018-10-29T06:48:34Z" finished-at="2018-10-29T06:48:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="exteriorStyleMenu()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="exteriorStyleMenu" duration-ms="37799" started-at="2018-10-29T06:48:39Z" finished-at="2018-10-29T06:49:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exteriorStyleMenu -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5317" started-at="2018-10-29T06:49:17Z" finished-at="2018-10-29T06:49:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="reCalculateAvg()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="reCalculateAvg" duration-ms="17994" started-at="2018-10-29T06:49:22Z" finished-at="2018-10-29T06:49:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reCalculateAvg -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="5400" started-at="2018-10-29T06:49:40Z" finished-at="2018-10-29T06:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="screenOrganised()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="screenOrganised" duration-ms="19244" started-at="2018-10-29T06:49:46Z" finished-at="2018-10-29T06:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenOrganised -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="7268" started-at="2018-10-29T06:50:05Z" finished-at="2018-10-29T06:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="countTwice()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="countTwice" duration-ms="16970" started-at="2018-10-29T06:50:12Z" finished-at="2018-10-29T06:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countTwice -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="beforeMethod" is-config="true" duration-ms="6270" started-at="2018-10-29T06:50:29Z" finished-at="2018-10-29T06:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="reportSupplied()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="reportSupplied" duration-ms="29486" started-at="2018-10-29T06:50:35Z" finished-at="2018-10-29T06:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSupplied -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testModules.Property_Comparables_Redbell@3fce8fd9]" name="afterClass" is-config="true" duration-ms="8178" started-at="2018-10-29T06:51:05Z" finished-at="2018-10-29T06:51:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testModules.Property_Comparables_Redbell -->
+      <class name="testModules.HomeScreenTests">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="783" started-at="2018-10-29T06:05:37Z" finished-at="2018-10-29T06:05:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.checkHomeElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="checkHomeElements()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="checkHomeElements" duration-ms="4197" started-at="2018-10-29T06:05:38Z" finished-at="2018-10-29T06:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomeElements -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="775" started-at="2018-10-29T06:05:42Z" finished-at="2018-10-29T06:05:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.propertiesInView()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="propertiesInView()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="propertiesInView" duration-ms="61606" started-at="2018-10-29T06:05:43Z" finished-at="2018-10-29T06:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertiesInView -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="831" started-at="2018-10-29T06:06:45Z" finished-at="2018-10-29T06:06:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.menuBtnCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="menuBtnCheck()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="menuBtnCheck" duration-ms="4091" started-at="2018-10-29T06:06:46Z" finished-at="2018-10-29T06:06:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at testModules.HomeScreenTests.menuBtnCheck(HomeScreenTests.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuBtnCheck -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1044" started-at="2018-10-29T06:06:50Z" finished-at="2018-10-29T06:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.menuBtnCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="menuBtnCheck()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="menuBtnCheck" duration-ms="2841" started-at="2018-10-29T06:06:51Z" finished-at="2018-10-29T06:06:54Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at testModules.HomeScreenTests.menuBtnCheck(HomeScreenTests.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuBtnCheck -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1193" started-at="2018-10-29T06:06:54Z" finished-at="2018-10-29T06:06:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.menuCloseOutside()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="menuCloseOutside()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="menuCloseOutside" duration-ms="6335" started-at="2018-10-29T06:06:55Z" finished-at="2018-10-29T06:07:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuCloseOutside -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="2312" started-at="2018-10-29T06:07:01Z" finished-at="2018-10-29T06:07:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.navDrawerScroll()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="navDrawerScroll()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="navDrawerScroll" duration-ms="29486" started-at="2018-10-29T06:07:03Z" finished-at="2018-10-29T06:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navDrawerScroll -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="945" started-at="2018-10-29T06:07:33Z" finished-at="2018-10-29T06:07:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.navDrawerFolders()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="navDrawerFolders()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="navDrawerFolders" duration-ms="41214" started-at="2018-10-29T06:07:34Z" finished-at="2018-10-29T06:08:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navDrawerFolders -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1252" started-at="2018-10-29T06:08:15Z" finished-at="2018-10-29T06:08:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.folderState()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="folderState()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="folderState" duration-ms="44034" started-at="2018-10-29T06:08:16Z" finished-at="2018-10-29T06:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- folderState -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="999" started-at="2018-10-29T06:09:00Z" finished-at="2018-10-29T06:09:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.propertyPhases()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="propertyPhases()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="propertyPhases" duration-ms="11395" started-at="2018-10-29T06:09:01Z" finished-at="2018-10-29T06:09:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertyPhases -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="945" started-at="2018-10-29T06:09:13Z" finished-at="2018-10-29T06:09:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.autoSelectedPhases()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="autoSelectedPhases()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="autoSelectedPhases" duration-ms="10854" started-at="2018-10-29T06:09:14Z" finished-at="2018-10-29T06:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoSelectedPhases -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1374" started-at="2018-10-29T06:09:25Z" finished-at="2018-10-29T06:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.propertyPhasesNumber()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="propertyPhasesNumber()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="propertyPhasesNumber" duration-ms="13150" started-at="2018-10-29T06:09:26Z" finished-at="2018-10-29T06:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertyPhasesNumber -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1147" started-at="2018-10-29T06:09:39Z" finished-at="2018-10-29T06:09:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.filterOnProperty()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="filterOnProperty()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="filterOnProperty" duration-ms="129705" started-at="2018-10-29T06:09:40Z" finished-at="2018-10-29T06:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterOnProperty -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1302" started-at="2018-10-29T06:11:50Z" finished-at="2018-10-29T06:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.loanPhases()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loanPhases()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="loanPhases" duration-ms="28620" started-at="2018-10-29T06:11:51Z" finished-at="2018-10-29T06:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanPhases -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="936" started-at="2018-10-29T06:12:20Z" finished-at="2018-10-29T06:12:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.filterOnLoan()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="filterOnLoan()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="filterOnLoan" duration-ms="44516" started-at="2018-10-29T06:12:21Z" finished-at="2018-10-29T06:13:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterOnLoan -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="957" started-at="2018-10-29T06:13:05Z" finished-at="2018-10-29T06:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.dateAdded()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="dateAdded()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="dateAdded" duration-ms="14443" started-at="2018-10-29T06:13:06Z" finished-at="2018-10-29T06:13:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateAdded -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="878" started-at="2018-10-29T06:13:21Z" finished-at="2018-10-29T06:13:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.oneFilterOnly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="oneFilterOnly()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="oneFilterOnly" duration-ms="29117" started-at="2018-10-29T06:13:22Z" finished-at="2018-10-29T06:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneFilterOnly -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="883" started-at="2018-10-29T06:13:51Z" finished-at="2018-10-29T06:13:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.team()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="team()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="team" duration-ms="37246" started-at="2018-10-29T06:13:52Z" finished-at="2018-10-29T06:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- team -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="883" started-at="2018-10-29T06:14:29Z" finished-at="2018-10-29T06:14:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.closeAndOpenCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="closeAndOpenCheck()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="closeAndOpenCheck" duration-ms="70026" started-at="2018-10-29T06:14:30Z" finished-at="2018-10-29T06:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAndOpenCheck -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="1149" started-at="2018-10-29T06:15:40Z" finished-at="2018-10-29T06:15:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.settingsHeader()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="settingsHeader()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="settingsHeader" duration-ms="26200" started-at="2018-10-29T06:15:41Z" finished-at="2018-10-29T06:16:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingsHeader -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="beforeTest" is-config="true" duration-ms="993" started-at="2018-10-29T06:16:07Z" finished-at="2018-10-29T06:16:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.HomeScreenTests.logOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="logOut()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="logOut" duration-ms="7520" started-at="2018-10-29T06:16:08Z" finished-at="2018-10-29T06:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testModules.HomeScreenTests@5f20155b]" name="afterClass" is-config="true" duration-ms="18469" started-at="2018-10-29T06:16:16Z" finished-at="2018-10-29T06:16:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testModules.HomeScreenTests -->
+      <class name="testModules.Property_HouseDetailsTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeClass" is-config="true" duration-ms="16044" started-at="2018-10-29T06:23:37Z" finished-at="2018-10-29T06:23:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-10-29T06:23:54Z" finished-at="2018-10-29T06:23:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.projectNameOnTop(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="projectNameOnTop(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="projectNameOnTop" duration-ms="600" started-at="2018-10-29T06:23:54Z" data-provider="data" finished-at="2018-10-29T06:23:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Project 1925 Pensione Pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- projectNameOnTop -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-10-29T06:23:54Z" finished-at="2018-10-29T06:23:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.houseDetailsBtn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="houseDetailsBtn()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="houseDetailsBtn" duration-ms="7741" started-at="2018-10-29T06:23:54Z" finished-at="2018-10-29T06:24:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseDetailsBtn -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10503" started-at="2018-10-29T06:24:02Z" finished-at="2018-10-29T06:24:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.houseDetailsSelection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="houseDetailsSelection()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="houseDetailsSelection" duration-ms="2143" started-at="2018-10-29T06:24:13Z" finished-at="2018-10-29T06:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseDetailsSelection -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9752" started-at="2018-10-29T06:24:15Z" finished-at="2018-10-29T06:24:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.houseDetailsCell()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="houseDetailsCell()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="houseDetailsCell" duration-ms="3023" started-at="2018-10-29T06:24:24Z" finished-at="2018-10-29T06:24:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseDetailsCell -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9733" started-at="2018-10-29T06:24:27Z" finished-at="2018-10-29T06:24:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.screenSections()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="screenSections()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="screenSections" duration-ms="9750" started-at="2018-10-29T06:24:37Z" finished-at="2018-10-29T06:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenSections -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10649" started-at="2018-10-29T06:24:47Z" finished-at="2018-10-29T06:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.checkZillowField()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="checkZillowField()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="checkZillowField" duration-ms="13299" started-at="2018-10-29T06:24:58Z" finished-at="2018-10-29T06:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkZillowField -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9725" started-at="2018-10-29T06:25:11Z" finished-at="2018-10-29T06:25:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.houseDetailsCheckmark()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="houseDetailsCheckmark()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="houseDetailsCheckmark" duration-ms="5593" started-at="2018-10-29T06:25:21Z" finished-at="2018-10-29T06:25:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseDetailsCheckmark -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9728" started-at="2018-10-29T06:25:26Z" finished-at="2018-10-29T06:25:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.zillowText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="zillowText()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="zillowText" duration-ms="1653" started-at="2018-10-29T06:25:36Z" finished-at="2018-10-29T06:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zillowText -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9746" started-at="2018-10-29T06:25:38Z" finished-at="2018-10-29T06:25:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.zillowLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="zillowLogo()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="zillowLogo" duration-ms="10397" started-at="2018-10-29T06:25:47Z" finished-at="2018-10-29T06:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zillowLogo -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10887" started-at="2018-10-29T06:25:58Z" finished-at="2018-10-29T06:26:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.clickableLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="clickableLogo()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="clickableLogo" duration-ms="34844" started-at="2018-10-29T06:26:09Z" finished-at="2018-10-29T06:26:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at testModules.Property_HouseDetailsTest.clickableLogo(Property_HouseDetailsTest.java:240)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickableLogo -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="11150" started-at="2018-10-29T06:26:43Z" finished-at="2018-10-29T06:26:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.clickableLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="clickableLogo()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="clickableLogo" duration-ms="44898" started-at="2018-10-29T06:26:55Z" finished-at="2018-10-29T06:27:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at testModules.Property_HouseDetailsTest.clickableLogo(Property_HouseDetailsTest.java:245)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickableLogo -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="18242" started-at="2018-10-29T06:27:40Z" finished-at="2018-10-29T06:27:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.offlineBrandingCheck()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="offlineBrandingCheck()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="offlineBrandingCheck" duration-ms="25776" started-at="2018-10-29T06:27:58Z" finished-at="2018-10-29T06:28:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- offlineBrandingCheck -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="12042" started-at="2018-10-29T06:28:25Z" finished-at="2018-10-29T06:28:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.addressUpdate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addressUpdate(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="addressUpdate" duration-ms="70912" started-at="2018-10-29T06:28:37Z" data-provider="data" finished-at="2018-10-29T06:29:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[97 Madison Ave]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Island Park]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NY]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11558]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addressUpdate -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10820" started-at="2018-10-29T06:29:50Z" finished-at="2018-10-29T06:30:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.editZillowFields(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="editZillowFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="editZillowFields" duration-ms="48693" started-at="2018-10-29T06:30:01Z" data-provider="data" finished-at="2018-10-29T06:30:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1936]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editZillowFields -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9822" started-at="2018-10-29T06:30:50Z" finished-at="2018-10-29T06:31:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.addOnField(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addOnField(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="addOnField" duration-ms="9773" started-at="2018-10-29T06:31:00Z" data-provider="data" finished-at="2018-10-29T06:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOnField -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10130" started-at="2018-10-29T06:31:11Z" finished-at="2018-10-29T06:31:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.addOnDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addOnDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="addOnDropDown" duration-ms="19828" started-at="2018-10-29T06:31:21Z" data-provider="data" finished-at="2018-10-29T06:31:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOnDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10608" started-at="2018-10-29T06:31:42Z" finished-at="2018-10-29T06:31:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.homeStyleDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="homeStyleDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="homeStyleDropDown" duration-ms="21323" started-at="2018-10-29T06:31:52Z" data-provider="data" finished-at="2018-10-29T06:32:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeStyleDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9843" started-at="2018-10-29T06:32:14Z" finished-at="2018-10-29T06:32:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.exteriorStyleDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="exteriorStyleDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="exteriorStyleDropDown" duration-ms="22245" started-at="2018-10-29T06:32:24Z" data-provider="data" finished-at="2018-10-29T06:32:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exteriorStyleDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9724" started-at="2018-10-29T06:32:47Z" finished-at="2018-10-29T06:32:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.garageSizeDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="garageSizeDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="garageSizeDropDown" duration-ms="11996" started-at="2018-10-29T06:32:56Z" data-provider="data" finished-at="2018-10-29T06:33:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- garageSizeDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9608" started-at="2018-10-29T06:33:09Z" finished-at="2018-10-29T06:33:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.tapGarageCheckBox(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="tapGarageCheckBox(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="tapGarageCheckBox" duration-ms="3461" started-at="2018-10-29T06:33:18Z" data-provider="data" finished-at="2018-10-29T06:33:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapGarageCheckBox -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9779" started-at="2018-10-29T06:33:22Z" finished-at="2018-10-29T06:33:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.garageConversionField(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="garageConversionField(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="garageConversionField" duration-ms="9839" started-at="2018-10-29T06:33:32Z" data-provider="data" finished-at="2018-10-29T06:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- garageConversionField -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9831" started-at="2018-10-29T06:33:43Z" finished-at="2018-10-29T06:33:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.garageConversionDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="garageConversionDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="garageConversionDropDown" duration-ms="20061" started-at="2018-10-29T06:33:52Z" data-provider="data" finished-at="2018-10-29T06:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- garageConversionDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10674" started-at="2018-10-29T06:34:14Z" finished-at="2018-10-29T06:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.acDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="acDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="acDropDown" duration-ms="11957" started-at="2018-10-29T06:34:24Z" data-provider="data" finished-at="2018-10-29T06:34:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9859" started-at="2018-10-29T06:34:37Z" finished-at="2018-10-29T06:34:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.poolDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="poolDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="poolDropDown" duration-ms="17777" started-at="2018-10-29T06:34:47Z" data-provider="data" finished-at="2018-10-29T06:35:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- poolDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9851" started-at="2018-10-29T06:35:06Z" finished-at="2018-10-29T06:35:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.hotTub(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="hotTub(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="hotTub" duration-ms="13702" started-at="2018-10-29T06:35:16Z" data-provider="data" finished-at="2018-10-29T06:35:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotTub -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9814" started-at="2018-10-29T06:35:30Z" finished-at="2018-10-29T06:35:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.storageBuildingField(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="storageBuildingField(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="storageBuildingField" duration-ms="9433" started-at="2018-10-29T06:35:40Z" data-provider="data" finished-at="2018-10-29T06:35:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storageBuildingField -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10785" started-at="2018-10-29T06:35:50Z" finished-at="2018-10-29T06:36:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.storageBuildingDropDown(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="storageBuildingDropDown(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="storageBuildingDropDown" duration-ms="12556" started-at="2018-10-29T06:36:01Z" data-provider="data" finished-at="2018-10-29T06:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storageBuildingDropDown -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9816" started-at="2018-10-29T06:36:15Z" finished-at="2018-10-29T06:36:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.houseDimensions(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="houseDimensions(java.lang.String, java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="houseDimensions" duration-ms="16523" started-at="2018-10-29T06:36:24Z" data-provider="data" finished-at="2018-10-29T06:36:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseDimensions -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9844" started-at="2018-10-29T06:36:41Z" finished-at="2018-10-29T06:36:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.addFeature()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addFeature()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="addFeature" duration-ms="16766" started-at="2018-10-29T06:36:51Z" finished-at="2018-10-29T06:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFeature -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10197" started-at="2018-10-29T06:37:08Z" finished-at="2018-10-29T06:37:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.addingDataInAmenities(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addingDataInAmenities(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="addingDataInAmenities" duration-ms="34788" started-at="2018-10-29T06:37:18Z" data-provider="data" finished-at="2018-10-29T06:37:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TRIAL 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingDataInAmenities -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10265" started-at="2018-10-29T06:37:55Z" finished-at="2018-10-29T06:38:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.deleteAmenities(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="deleteAmenities(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="deleteAmenities" duration-ms="10298" started-at="2018-10-29T06:38:05Z" data-provider="data" finished-at="2018-10-29T06:38:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAmenities -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="9964" started-at="2018-10-29T06:38:16Z" finished-at="2018-10-29T06:38:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.selectPricingProfile(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="selectPricingProfile(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="selectPricingProfile" duration-ms="30745" started-at="2018-10-29T06:38:26Z" data-provider="data" finished-at="2018-10-29T06:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPricingProfile -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="11463" started-at="2018-10-29T06:38:57Z" finished-at="2018-10-29T06:39:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.safeSize()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="safeSize()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="safeSize" duration-ms="4798" started-at="2018-10-29T06:39:09Z" finished-at="2018-10-29T06:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- safeSize -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10042" started-at="2018-10-29T06:39:13Z" finished-at="2018-10-29T06:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.safeSizeInfo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="safeSizeInfo()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="safeSizeInfo" duration-ms="4428" started-at="2018-10-29T06:39:23Z" finished-at="2018-10-29T06:39:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- safeSizeInfo -->
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="beforeTest" is-config="true" duration-ms="10124" started-at="2018-10-29T06:39:28Z" finished-at="2018-10-29T06:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testModules.Property_HouseDetailsTest.notesHouseDetails(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="notesHouseDetails(java.lang.String)[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="notesHouseDetails" duration-ms="14801" started-at="2018-10-29T06:39:39Z" data-provider="data" finished-at="2018-10-29T06:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A pangram, or holoalphabetic sentence, is a sentence that contains every letter of the alphabet at least once. The most famous pangram is probably the thirty-five-letter-long “The quick brown fox jumps over the lazy dog,” which has been used to test typing equipment since at least the late 1800s.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notesHouseDetails -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testModules.Property_HouseDetailsTest@239105a8]" name="afterClass" is-config="true" duration-ms="2243" started-at="2018-10-29T06:39:53Z" finished-at="2018-10-29T06:39:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testModules.Property_HouseDetailsTest -->
+      <class name="testModules.New_PropertyTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="beforeClass" is-config="true" duration-ms="12206" started-at="2018-10-29T06:16:34Z" finished-at="2018-10-29T06:16:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="newPropertyBtn()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="newPropertyBtn" duration-ms="7864" started-at="2018-10-29T06:16:46Z" finished-at="2018-10-29T06:16:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newPropertyBtn -->
+        <test-method status="PASS" signature="newPropertyCheck()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="newPropertyCheck" duration-ms="13976" started-at="2018-10-29T06:16:54Z" finished-at="2018-10-29T06:17:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newPropertyCheck -->
+        <test-method status="PASS" signature="tapPropertyOne()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="tapPropertyOne" duration-ms="12093" started-at="2018-10-29T06:17:08Z" finished-at="2018-10-29T06:17:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapPropertyOne -->
+        <test-method status="PASS" signature="sellerPage()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="sellerPage" duration-ms="33261" started-at="2018-10-29T06:17:20Z" finished-at="2018-10-29T06:17:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sellerPage -->
+        <test-method status="PASS" signature="defaultPhase()[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="defaultPhase" duration-ms="12532" started-at="2018-10-29T06:17:54Z" finished-at="2018-10-29T06:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultPhase -->
+        <test-method status="PASS" signature="charLimit(java.lang.String, java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="charLimit" duration-ms="52593" started-at="2018-10-29T06:18:07Z" data-provider="data" finished-at="2018-10-29T06:18:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[It  doesn’t  matter  what  type  of  ugly  home  you  have, HomeVestors  would  like  to  make  a  no  obligation  cash  offer  to purchase your home for cash. ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- charLimit -->
+        <test-method status="PASS" signature="fillingSeller(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="fillingSeller" duration-ms="99000" started-at="2018-10-29T06:19:00Z" data-provider="data" finished-at="2018-10-29T06:20:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Project]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alfred]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Morrison]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1925 Pensione Pl]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Wenatchee]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[WA]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[98801.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[7.183954794E9]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[johncater@hva.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Enjoy this home located in Western Heights.Close to schools and downtown.This 4 bedroom, 2 bath has great floor plan ready for your personal touch to decorate.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillingSeller -->
+        <test-method status="PASS" signature="wrongEmail(java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="wrongEmail" duration-ms="44228" started-at="2018-10-29T06:20:39Z" data-provider="data" finished-at="2018-10-29T06:21:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sasfdsgsgs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongEmail -->
+        <test-method status="PASS" signature="wrongState(java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="wrongState" duration-ms="32427" started-at="2018-10-29T06:21:23Z" data-provider="data" finished-at="2018-10-29T06:21:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongState -->
+        <test-method status="PASS" signature="editingSeller(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="editingSeller" duration-ms="51084" started-at="2018-10-29T06:21:56Z" data-provider="data" finished-at="2018-10-29T06:22:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ 1925 Pensione Pl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[WA]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9.836663366E9]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[alfred_morrison@hva.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editingSeller -->
+        <test-method status="PASS" signature="tileCheck(java.lang.String, java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="tileCheck" duration-ms="10795" started-at="2018-10-29T06:22:47Z" data-provider="data" finished-at="2018-10-29T06:22:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Project 1925 Pensione Pl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1925 Pensione Pl Wenatchee, WA 98801]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tileCheck -->
+        <test-method status="PASS" signature="redBell(java.lang.String, java.lang.String)[pri:0, instance:testModules.New_PropertyTests@72ade7e3]" name="redBell" duration-ms="38701" started-at="2018-10-29T06:22:59Z" data-provider="data" finished-at="2018-10-29T06:23:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[21844250-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$68.73]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redBell -->
+      </class> <!-- testModules.New_PropertyTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
